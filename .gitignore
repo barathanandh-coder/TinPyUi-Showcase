@@ -1,0 +1,6 @@
+public/*
+!public/.gitkeep
+__pycache__/
+*.pyc
+node_modules/
+*.db

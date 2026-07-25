@@ -1,0 +1,193 @@
+component Main():
+    AnimatedBackground(effect="cyber-wave", primaryColor="neon-purple", secondaryColor="neon-cyan"):
+
+        Navbar(padding=20, blur=true, fixed=true):
+            Row(align="center", justify="space-between", width="full"):
+                Row(align="center", gap=10):
+                    Text(text="◉", color="neon-cyan", size="large", weight="bold")
+                    Text(text="TinPyUI", color="neon-cyan", weight="bold", size="large")
+
+                Row(gap=30, color="white"):
+                    Text(text="Features", action="scrollToFeatures", hoverGlow="neon-cyan")
+                    Text(text="Showcase", action="scrollToShowcase", hoverGlow="neon-cyan")
+                    Text(text="Animations", action="scrollToAnimations", hoverGlow="neon-cyan")
+                    Text(text="Reviews", action="scrollToReviews", hoverGlow="neon-cyan")
+                    Text(text="Install", action="scrollToInstall", hoverGlow="neon-cyan")
+                    Text(text="GitHub", action="openGithub", hoverGlow="neon-cyan")
+
+        Section(id="hero", align="center", paddingY=160, maxWidth=900, justify="center"):
+            Text(text="◉", color="neon-purple", size="hero", weight="bold")
+            Spacer(height=20)
+            Text(text="v1.4.2 — Now Available", color="neon-green", size="small", weight="bold")
+            Spacer(height=20)
+            Text(text="TinPyUI", color="neon-cyan", size="hero", weight="bold")
+            Spacer(height=16)
+            Text(text="The WebAssembly UI framework that compiles Pythonic syntax into blazing-fast native DOM", size="large", color="gray-300", align="center", maxWidth=700)
+            Spacer(height=40)
+            Row(gap=20, justify="center"):
+                Text(text="Get Started", color="black", bg="neon-cyan", padding="14px 32px", radius=12, weight="bold", action="scrollToInstall", hoverGlow="neon-cyan")
+                Text(text="View Demo", color="neon-purple", border="2px solid neon-purple", padding="14px 32px", radius=12, weight="bold", action="scrollToShowcase", hoverGlow="neon-purple")
+
+        Section(id="features", align="center", paddingY=100, maxWidth=1200):
+            Text(text="Why TinPyUI?", size="section", color="white", weight="bold", align="center")
+            Spacer(height=20)
+            Text(text="Built from the ground up for performance, simplicity, and developer joy", color="gray-400", align="center")
+            Spacer(height=60)
+
+            Grid(cols=3, gap=24):
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="⚡", size="large")
+                        Text(text="WebAssembly Runtime", color="white", weight="bold", size="large")
+                        Text(text="A 10MB Go-compiled WASM engine executes your UI logic at near-native speed inside the browser.", color="gray-300", size="small")
+
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="🐍", size="large")
+                        Text(text="Pythonic Syntax", color="white", weight="bold", size="large")
+                        Text(text="Indentation-based component trees that feel natural to write. No JSX brackets, no template soup.", color="gray-300", size="small")
+
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="📦", size="large")
+                        Text(text="Zero Dependencies", color="white", weight="bold", size="large")
+                        Text(text="The npm package ships everything you need. No 500-node_modules folder. No dependency hell.", color="gray-300", size="small")
+
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="🖥️", size="large")
+                        Text(text="Cross-Platform CLI", color="white", weight="bold", size="large")
+                        Text(text="Native binaries for Linux, macOS, and Windows. Compile anywhere without Node.js.", color="gray-300", size="small")
+
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="🧩", size="large")
+                        Text(text="Intermediate Representation", color="white", weight="bold", size="large")
+                        Text(text="Your .tin files compile to a compact JSON IR, enabling future optimizations and alternative backends.", color="gray-300", size="small")
+
+                Card(maxWidth=400, padding=32, background="dark-glass", border="subtle", radius=16):
+                    Column(align="left", gap=16):
+                        Text(text="🔋", size="large")
+                        Text(text="Self-Contained", color="white", weight="bold", size="large")
+                        Text(text="Built-in dev server, WASM bootloader, and event system. One install, one command, running app.", color="gray-300", size="small")
+
+        Section(id="showcase", align="center", paddingY=100, maxWidth=1200):
+            Text(text="Live Showcase", size="section", color="white", weight="bold", align="center")
+            Spacer(height=20)
+            Text(text="See what TinPyUI components look like in action", color="gray-400", align="center")
+            Spacer(height=60)
+
+            Row(gap=30, justify="center", wrap=true):
+                Column(align="center", gap=20, padding=32, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.1)", radius=16, minWidth=280, maxWidth=350):
+                    Text(text="Neon Buttons", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=16)
+                    Row(gap=12, justify="center", wrap=true):
+                        Button(text="Primary", background="neon-cyan", color="dark-core", padding=14, radius=8, weight="bold", hoverGlow="neon-cyan")
+                        Button(text="Success", background="neon-purple", color="white", padding=14, radius=8, weight="bold", hoverGlow="neon-purple")
+                        Button(text="Danger", background="neon-pink", color="dark-core", padding=14, radius=8, weight="bold", hoverGlow="neon-pink")
+                        Button(text="Ghost", border="neon-purple", color="neon-purple", padding=14, radius=8, weight="bold", hoverGlow="neon-purple")
+
+                Column(align="center", gap=20, padding=32, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.1)", radius=16, minWidth=280, maxWidth=350):
+                    Text(text="Interactive Counter", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=16)
+                    Text(text="42", color="neon-cyan", size="display", weight="bold", align="center", dataBind="counterVal")
+                    Spacer(height=16)
+                    Row(gap=12, justify="center"):
+                        Text(text="-", color="black", bg="neon-pink", padding="10px 20px", radius=8, weight="bold", action="decrement", hoverGlow="neon-pink")
+                        Text(text="+", color="black", bg="neon-green", padding="10px 20px", radius=8, weight="bold", action="increment", hoverGlow="neon-green")
+
+                Column(align="center", gap=20, padding=32, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.1)", radius=16, minWidth=280, maxWidth=350):
+                    Text(text="State Binding", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=16)
+                    Input(placeholder="Type something...", dataBind="demoInput", width="full", padding=12, bg="rgba(255,255,255,0.05)", border="1px solid rgba(139,92,246,0.2)", radius=8)
+                    Spacer(height=12)
+                    Row(gap=8, justify="center"):
+                        Text(text="You typed:", color="gray-400", size="small")
+                        Text(text="", color="neon-cyan", weight="bold", size="small", dataBind="demoInput")
+
+                Column(align="center", gap=20, padding=32, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.1)", radius=16, minWidth=280, maxWidth=350):
+                    Text(text="Core Animations", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=16)
+                    Text(text="Pulse Animation", color="neon-cyan", animation="pulse", align="center")
+                    Spacer(height=10)
+                    Text(text="Fade In Up", color="neon-purple", animation="fade-in-up", align="center")
+                    Spacer(height=10)
+                    Text(text="Animated Button", color="black", bg="neon-green", padding="8px 16px", radius=8, weight="bold", animation="pulse", hoverGlow="neon-green")
+
+        Section(id="animations", align="center", paddingY=100, maxWidth=1200):
+            Text(text="Available Animation Features", size="section", color="white", weight="bold", align="center")
+            Spacer(height=20)
+            Text(text="Powered by WebGL, GSAP, and native WASM performance", color="gray-400", align="center")
+            Spacer(height=60)
+
+            Grid(cols=2, gap=32):
+                Column(align="center", padding=40, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.3)", radius=16):
+                    Text(text="Marquee Animation", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=30)
+                    Marquee(speed="fast"):
+                        Text(text="★ Fast ★ Pythonic ★ Zero Dependencies ★ Native DOM ★ WebAssembly ★ ", color="neon-cyan", size="large", weight="bold")
+
+                Column(align="center", padding=40, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.3)", radius=16):
+                    Text(text="Text Reveal", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=30)
+                    TextReveal(text="Hover or scroll to reveal me natively", color="neon-purple", size="large", weight="bold")
+                
+                Column(align="center", padding=40, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.3)", radius=16):
+                    Text(text="Morph Shape", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=30)
+                    MorphShape(fromShape="circle", toShape="square", color="neon-green", duration=2.0)
+                
+                Column(align="center", padding=40, bg="rgba(255,255,255,0.03)", border="1px solid rgba(139,92,246,0.3)", radius=16):
+                    Text(text="3D Scene Engine", color="white", weight="bold", size="large", align="center")
+                    Spacer(height=30)
+                    Scene3D(width=250, height=150):
+                        Light3D(type="ambient", color="white", intensity=0.5)
+                        Light3D(type="directional", color="white", intensity=1.0, position=[5, 5, 5])
+                        Mesh3D(geometry="cube", material="standard", color="neon-cyan")
+
+        Section(id="reviews", align="center", paddingY=100, maxWidth=1000):
+            Text(text="Developer Reviews", size="section", color="white", weight="bold", align="center")
+            Spacer(height=20)
+            Text(text="What the community is saying about TinPyUI", color="gray-400", align="center")
+            Spacer(height=60)
+            
+            Grid(id="reviewsList", cols=3, gap=24):
+                Text(text="Loading community reviews...", color="gray-500")
+
+            Spacer(height=60)
+            Column(align="center", gap=20, padding=40, bg="rgba(255,255,255,0.02)", border="1px solid rgba(139,92,246,0.3)", radius=16, maxWidth=600):
+                Text(text="Leave a Review", color="white", weight="bold", size="large")
+                Input(placeholder="Your Name", dataBind="reviewName", width="full", padding=12, bg="rgba(255,255,255,0.05)", border="1px solid rgba(139,92,246,0.2)", radius=8)
+                Input(placeholder="Your Handle (@username)", dataBind="reviewHandle", width="full", padding=12, bg="rgba(255,255,255,0.05)", border="1px solid rgba(139,92,246,0.2)", radius=8)
+                Input(placeholder="Write your review...", dataBind="reviewContent", width="full", padding=12, bg="rgba(255,255,255,0.05)", border="1px solid rgba(139,92,246,0.2)", radius=8)
+                Text(text="Submit Review", color="black", bg="neon-cyan", padding="12px 24px", radius=8, weight="bold", hoverGlow="neon-cyan")
+
+        Section(id="install", align="center", paddingY=100, maxWidth=800):
+            Text(text="Install in 30 Seconds", size="section", color="white", weight="bold", align="center")
+            Spacer(height=40)
+            Column(align="left", gap=0, padding=24, bg="#0f0f15", border="1px solid rgba(139,92,246,0.2)", radius=16):
+                Text(text="npm install -g tinpyui", color="neon-cyan", font="monospace", size="small")
+                Text(text="tinpyui init my-app", color="neon-cyan", font="monospace", size="small")
+                Text(text="cd my-app", color="neon-cyan", font="monospace", size="small")
+                Text(text="tinpyui compile src/index.tin", color="neon-cyan", font="monospace", size="small")
+                Text(text="tinpyui serve", color="neon-cyan", font="monospace", size="small")
+            Spacer(height=20)
+            Text(text="Then open http://localhost:3000", color="gray-400", align="center")
+            Spacer(height=30)
+            Text(text="Copy to Clipboard", color="black", bg="neon-cyan", padding="14px 32px", radius=12, weight="bold", align="center", action="copyInstall", hoverGlow="neon-cyan")
+
+        Section(align="center", paddingY=80, maxWidth=900):
+            Column(align="center", gap=20, padding=60, bg="rgba(139,92,246,0.08)", border="1px solid rgba(139,92,246,0.3)", radius=24):
+                Text(text="◉", color="neon-cyan", size="large")
+                Spacer(height=10)
+                Text(text="Ready to build the future?", size="large", color="white", weight="bold", align="center")
+                Text(text="TinPyUI is MIT licensed and open source. Contributions welcome.", color="gray-300", align="center")
+                Spacer(height=20)
+                Row(gap=20, justify="center"):
+                    Text(text="Star on GitHub", color="black", bg="neon-cyan", padding="14px 32px", radius=12, weight="bold", action="openGithub", hoverGlow="neon-cyan")
+                    Text(text="View on npm", color="neon-purple", border="2px solid neon-purple", padding="14px 32px", radius=12, weight="bold", action="openNpm", hoverGlow="neon-purple")
+
+        Footer(padding=40, align="center"):
+            Row(align="center", gap=8):
+                Text(text="◉", color="neon-cyan", size="small")
+                Text(text="© 2026 TinPyUI by Barathanandh. Built with passion and WebAssembly.", color="gray-500", size="small")
