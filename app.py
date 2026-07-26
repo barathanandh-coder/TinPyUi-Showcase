@@ -1,7 +1,7 @@
 from flask import Flask, send_from_directory, request, jsonify
 import os
 
-app = Flask(__name__, static_folder='public')
+app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'public'))
 
 # In-memory list for reviews (will reset when serverless function sleeps)
 REVIEWS = []
