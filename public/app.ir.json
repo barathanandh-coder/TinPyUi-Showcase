@@ -9,26 +9,14 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 1,
-      "key": "data-hero-background",
-      "value": "cyber-wave"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 1,
-      "key": "primaryColor",
-      "value": "neon-purple"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 1,
-      "key": "secondaryColor",
-      "value": "neon-cyan"
+      "key": "class",
+      "value": "text-on-surface selection:bg-primary selection:text-on-primary"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 1,
       "key": "style",
-      "value": "position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow-y: auto; box-sizing: border-box; background: radial-gradient(circle at top right, rgba(155,81,224,0.15), #0a0b10);"
+      "value": "font-family: 'Outfit', sans-serif; font-size: 14px; overflow-y: auto; height: 100vh; scroll-behavior: smooth;"
     },
     {
       "op": "APPEND_CHILD",
@@ -37,19 +25,19 @@
     {
       "op": "CREATE_NODE",
       "id": 2,
-      "tag": "nav"
+      "tag": "link"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 2,
-      "key": "fixed",
-      "value": "true"
+      "key": "href",
+      "value": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700\u0026family=Space+Mono:ital,wght@0,400;0,700\u0026display=swap"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 2,
-      "key": "style",
-      "value": "display: flex; position: sticky; top: 0; width: 100%; z-index: 100; box-sizing: border-box; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 20px;"
+      "key": "rel",
+      "value": "stylesheet"
     },
     {
       "op": "APPEND_CHILD",
@@ -64,24 +52,42 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 3,
+      "key": "class",
+      "value": "fixed inset-0 w-full h-full -z-50 overflow-hidden pointer-events-none"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 3,
       "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; justify-content: space-between; width: 100%;"
+      "value": "display:block;"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 2,
+      "parent": 1,
       "child": 3
     },
     {
       "op": "CREATE_NODE",
       "id": 4,
-      "tag": "div"
+      "tag": "canvas"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 4,
+      "key": "height",
+      "value": "4576"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 4,
+      "key": "id",
+      "value": "shader-canvas-ANIMATION_13"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 4,
       "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 10px;"
+      "value": "display:block;width:100%;height:100%"
     },
     {
       "op": "APPEND_CHILD",
@@ -91,43 +97,45 @@
     {
       "op": "CREATE_NODE",
       "id": 5,
-      "tag": "p"
+      "tag": "div"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 5,
-      "value": "\u25c9"
+      "key": "class",
+      "value": "cursor-trail"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 5,
+      "key": "id",
+      "value": "cursor"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 5,
       "key": "style",
-      "value": "color: #00f2fe; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "transform: translate(1264px, 3818px);"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 4,
+      "parent": 1,
       "child": 5
     },
     {
       "op": "CREATE_NODE",
       "id": 6,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 6,
-      "value": "TinPyUI"
+      "tag": "nav"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 6,
-      "key": "style",
-      "value": "color: #00f2fe; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "fixed top-0 w-full z-50 bg-surface-container-lowest/30 backdrop-blur-xl border-b border-outline-variant/10"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 4,
+      "parent": 1,
       "child": 6
     },
     {
@@ -138,41 +146,30 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 7,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; color: #ffffff; gap: 30px;"
+      "key": "class",
+      "value": "flex justify-between items-center max-w-max-width mx-auto px-margin-desktop py-4"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 3,
+      "parent": 6,
       "child": 7
     },
     {
       "op": "CREATE_NODE",
       "id": 8,
-      "tag": "p"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 8,
-      "key": "data-action",
-      "value": "scrollToFeatures"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 8,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 8,
-      "value": "Features"
+      "key": "class",
+      "value": "font-bold text-primary tracking-tighter"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 8,
       "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "value": "font-size: 1.3rem; letter-spacing: -0.03em;"
     },
     {
       "op": "APPEND_CHILD",
@@ -182,63 +179,28 @@
     {
       "op": "CREATE_NODE",
       "id": 9,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 9,
-      "key": "data-action",
-      "value": "scrollToShowcase"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 9,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 9,
-      "value": "Showcase"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 9,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "value": "TinPyUI"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 7,
+      "parent": 8,
       "child": 9
     },
     {
       "op": "CREATE_NODE",
       "id": 10,
-      "tag": "p"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 10,
-      "key": "data-action",
-      "value": "scrollToAnimations"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 10,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 10,
-      "value": "Animations"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 10,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "key": "class",
+      "value": "hidden md:flex gap-8 items-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -248,358 +210,295 @@
     {
       "op": "CREATE_NODE",
       "id": 11,
-      "tag": "p"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 11,
-      "key": "data-action",
-      "value": "scrollToReviews"
+      "key": "class",
+      "value": "font-body-md text-body-md text-primary border-b-2 border-primary pb-1"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 11,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 11,
-      "value": "Reviews"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 11,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "key": "href",
+      "value": "#hero"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 7,
+      "parent": 10,
       "child": 11
     },
     {
       "op": "CREATE_NODE",
       "id": 12,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 12,
-      "key": "data-action",
-      "value": "scrollToInstall"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 12,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 12,
-      "value": "Install"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 12,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "value": "Showcase"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 7,
+      "parent": 11,
       "child": 12
     },
     {
       "op": "CREATE_NODE",
       "id": 13,
-      "tag": "p"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 13,
-      "key": "data-action",
-      "value": "openGithub"
+      "key": "class",
+      "value": "font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 13,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 13,
-      "value": "GitHub"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 13,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);"
+      "key": "href",
+      "value": "#features"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 7,
+      "parent": 10,
       "child": 13
     },
     {
       "op": "CREATE_NODE",
       "id": 14,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 14,
-      "key": "id",
-      "value": "hero"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 14,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; justify-content: center; max-width: 900px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 160px; padding-bottom: 160px;"
+      "value": "Features"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 13,
       "child": 14
     },
     {
       "op": "CREATE_NODE",
       "id": 15,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 15,
-      "value": "\u25c9"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 15,
-      "key": "style",
-      "value": "color: #9b51e0; font-size: 3.5rem; font-weight: 800; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 15,
+      "key": "href",
+      "value": "#install"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 10,
       "child": 15
     },
     {
       "op": "CREATE_NODE",
       "id": 16,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 16,
-      "key": "height",
-      "value": "20"
+      "value": "Docs"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 15,
       "child": 16
     },
     {
       "op": "CREATE_NODE",
       "id": 17,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 17,
-      "value": "v1.4.2 \u2014 Now Available"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 17,
-      "key": "style",
-      "value": "font-weight: bold;"
+      "key": "class",
+      "value": "font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 17,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/discussions"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 17,
+      "key": "target",
+      "value": "_blank"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 10,
       "child": 17
     },
     {
       "op": "CREATE_NODE",
       "id": 18,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 18,
-      "key": "height",
-      "value": "20"
+      "value": "Community"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 17,
       "child": 18
     },
     {
       "op": "CREATE_NODE",
       "id": 19,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 19,
-      "value": "TinPyUI"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 19,
-      "key": "style",
-      "value": "color: #00f2fe; font-size: 3.5rem; font-weight: 800; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "flex items-center gap-4"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 7,
       "child": 19
     },
     {
       "op": "CREATE_NODE",
       "id": 20,
-      "tag": "Spacer"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 20,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 20,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 20,
+      "key": "target",
+      "value": "_blank"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 19,
       "child": 20
     },
     {
       "op": "CREATE_NODE",
       "id": 21,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 21,
-      "value": "The WebAssembly UI framework that compiles Pythonic syntax into blazing-fast native DOM"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 21,
-      "key": "style",
-      "value": "align-items: center; max-width: 700px; width: 100%; margin-left: auto; margin-right: auto; font-size: 1.25rem; margin: 0;"
+      "value": "terminal"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 20,
       "child": 21
     },
     {
       "op": "CREATE_NODE",
       "id": 22,
-      "tag": "Spacer"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 22,
-      "key": "height",
-      "value": "40"
+      "key": "class",
+      "value": "bg-primary text-on-primary px-6 py-2 font-body-md font-bold hover:scale-105 transition-transform active:scale-95 inline-block"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 22,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/discussions"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 22,
+      "key": "target",
+      "value": "_blank"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 19,
       "child": 22
     },
     {
       "op": "CREATE_NODE",
       "id": 23,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 23,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 20px; justify-content: center;"
+      "value": "Join the Beta"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 14,
+      "parent": 22,
       "child": 23
     },
     {
       "op": "CREATE_NODE",
       "id": 24,
-      "tag": "p"
+      "tag": "main"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 24,
-      "key": "bg",
-      "value": "neon-cyan"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 24,
-      "key": "data-action",
-      "value": "scrollToInstall"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 24,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 24,
-      "value": "Get Started"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 24,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 14px 32pxpx; border-radius: 12px; font-weight: bold;"
+      "key": "class",
+      "value": "relative bg-transparent"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 23,
+      "parent": 1,
       "child": 24
     },
     {
       "op": "CREATE_NODE",
       "id": 25,
-      "tag": "p"
+      "tag": "section"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 25,
-      "key": "data-action",
-      "value": "scrollToShowcase"
+      "key": "class",
+      "value": "relative min-h-[90vh] flex items-center overflow-hidden bg-transparent"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 25,
-      "key": "data-hover-glow",
-      "value": "#9b51e0"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 25,
-      "value": "View Demo"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 25,
-      "key": "style",
-      "value": "color: #9b51e0; --hover-color: #9b51e0; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 14px 32pxpx; border-radius: 12px; font-weight: bold;"
+      "key": "id",
+      "value": "hero"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 23,
+      "parent": 24,
       "child": 25
     },
     {
@@ -610,35 +509,24 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 26,
-      "key": "id",
-      "value": "features"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 26,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 1200px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;"
+      "key": "class",
+      "value": "container mx-auto px-margin-desktop grid md:grid-cols-2 gap-12 items-center relative z-10"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 25,
       "child": 26
     },
     {
       "op": "CREATE_NODE",
       "id": 27,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 27,
-      "value": "Why TinPyUI?"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 27,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-weight: bold;"
+      "key": "class",
+      "value": "space-y-8"
     },
     {
       "op": "APPEND_CHILD",
@@ -648,88 +536,75 @@
     {
       "op": "CREATE_NODE",
       "id": 28,
-      "tag": "Spacer"
+      "tag": "h1"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 28,
-      "key": "height",
-      "value": "20"
+      "key": "class",
+      "value": "text-on-surface leading-[1.05] tracking-tight"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 28,
+      "key": "style",
+      "value": "font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 700;"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 26,
+      "parent": 27,
       "child": 28
     },
     {
       "op": "CREATE_NODE",
       "id": 29,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 29,
-      "value": "Built from the ground up for performance, simplicity, and developer joy"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 29,
-      "key": "style",
-      "value": "align-items: center;"
+      "value": "The Wasm"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 26,
+      "parent": 28,
       "child": 29
     },
     {
       "op": "CREATE_NODE",
       "id": 30,
-      "tag": "Spacer"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 30,
-      "key": "height",
-      "value": "60"
+      "tag": "br"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 26,
+      "parent": 28,
       "child": 30
     },
     {
       "op": "CREATE_NODE",
       "id": 31,
-      "tag": "Grid"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 31,
-      "key": "cols",
-      "value": "3"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 31,
-      "key": "style",
-      "value": "gap: 24px;"
+      "key": "class",
+      "value": "text-primary italic"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 26,
+      "parent": 28,
       "child": 31
     },
     {
       "op": "CREATE_NODE",
       "id": 32,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 32,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "value": "Showcase."
     },
     {
       "op": "APPEND_CHILD",
@@ -739,34 +614,35 @@
     {
       "op": "CREATE_NODE",
       "id": 33,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 33,
-      "key": "style",
-      "value": "gap: 16px;"
+      "key": "class",
+      "value": "h-12 overflow-hidden"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 32,
+      "parent": 27,
       "child": 33
     },
     {
       "op": "CREATE_NODE",
       "id": 34,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 34,
-      "value": "\u26a1"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 34,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "key": "class",
+      "value": "transition-all duration-500 font-label-mono text-headline-md text-secondary"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 34,
+      "key": "id",
+      "value": "morph-subheadline"
     },
     {
       "op": "APPEND_CHILD",
@@ -776,22 +652,16 @@
     {
       "op": "CREATE_NODE",
       "id": 35,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 35,
-      "value": "WebAssembly Runtime"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 35,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "Experience the limit of the Zero-DOM engine."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 33,
+      "parent": 34,
       "child": 35
     },
     {
@@ -800,62 +670,63 @@
       "tag": "p"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 36,
-      "value": "A 10MB Go-compiled WASM engine executes your UI logic at near-native speed inside the browser."
+      "key": "class",
+      "value": "font-body-lg text-body-lg text-on-surface-variant max-w-lg"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 33,
+      "parent": 27,
       "child": 36
     },
     {
       "op": "CREATE_NODE",
       "id": 37,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 37,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "value": "Build stunning, high-performance UIs with pure Pythonic syntax, compiled to WebAssembly and rendered via a Zero-DOM WebGL engine."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 31,
+      "parent": 36,
       "child": 37
     },
     {
       "op": "CREATE_NODE",
       "id": 38,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 38,
-      "key": "style",
-      "value": "gap: 16px;"
+      "key": "class",
+      "value": "flex gap-4"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 37,
+      "parent": 27,
       "child": 38
     },
     {
       "op": "CREATE_NODE",
       "id": 39,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 39,
-      "value": "\ud83d\udc0d"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 39,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "key": "class",
+      "value": "bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 39,
+      "key": "href",
+      "value": "#features"
     },
     {
       "op": "APPEND_CHILD",
@@ -865,33 +736,34 @@
     {
       "op": "CREATE_NODE",
       "id": 40,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 40,
-      "value": "Pythonic Syntax"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 40,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "Explore Features"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 38,
+      "parent": 39,
       "child": 40
     },
     {
       "op": "CREATE_NODE",
       "id": 41,
-      "tag": "p"
+      "tag": "a"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 41,
-      "value": "Indentation-based component trees that feel natural to write. No JSX brackets, no template soup."
+      "key": "class",
+      "value": "border border-primary text-primary px-8 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all inline-block"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 41,
+      "key": "href",
+      "value": "#install"
     },
     {
       "op": "APPEND_CHILD",
@@ -901,50 +773,50 @@
     {
       "op": "CREATE_NODE",
       "id": 42,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 42,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "value": "Get Started"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 31,
+      "parent": 41,
       "child": 42
     },
     {
       "op": "CREATE_NODE",
       "id": 43,
-      "tag": "Column"
+      "tag": "section"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 43,
-      "key": "style",
-      "value": "gap: 16px;"
+      "key": "class",
+      "value": "py-24 relative reveal-section px-margin-desktop max-w-max-width mx-auto bg-transparent active"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 43,
+      "key": "id",
+      "value": "features"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 42,
+      "parent": 24,
       "child": 43
     },
     {
       "op": "CREATE_NODE",
       "id": 44,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 44,
-      "value": "\ud83d\udce6"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 44,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "key": "class",
+      "value": "mb-16"
     },
     {
       "op": "APPEND_CHILD",
@@ -954,65 +826,59 @@
     {
       "op": "CREATE_NODE",
       "id": 45,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 45,
-      "value": "Zero Dependencies"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 45,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "font-label-caps text-primary tracking-widest block mb-4"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 43,
+      "parent": 44,
       "child": 45
     },
     {
       "op": "CREATE_NODE",
       "id": 46,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 46,
-      "value": "The npm package ships everything you need. No 500-node_modules folder. No dependency hell."
+      "value": "CORE CAPABILITIES"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 43,
+      "parent": 45,
       "child": 46
     },
     {
       "op": "CREATE_NODE",
       "id": 47,
-      "tag": "div"
+      "tag": "h2"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 47,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 31,
+      "parent": 44,
       "child": 47
     },
     {
       "op": "CREATE_NODE",
       "id": 48,
-      "tag": "Column"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 48,
-      "key": "style",
-      "value": "gap: 16px;"
+      "value": "Why TinPyUI?"
     },
     {
       "op": "APPEND_CHILD",
@@ -1025,55 +891,45 @@
       "tag": "p"
     },
     {
-      "op": "SET_TEXT",
-      "id": 49,
-      "value": "\ud83d\udda5\ufe0f"
-    },
-    {
       "op": "SET_ATTRIBUTE",
       "id": 49,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "key": "class",
+      "value": "font-body-lg text-on-surface-variant mt-4 max-w-2xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 48,
+      "parent": 44,
       "child": 49
     },
     {
       "op": "CREATE_NODE",
       "id": 50,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 50,
-      "value": "Cross-Platform CLI"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 50,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "A complete rethink of how UIs are built — Python-first, Wasm-powered, and DOM-free."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 48,
+      "parent": 49,
       "child": 50
     },
     {
       "op": "CREATE_NODE",
       "id": 51,
-      "tag": "p"
+      "tag": "div"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 51,
-      "value": "Native binaries for Linux, macOS, and Windows. Compile anywhere without Node.js."
+      "key": "class",
+      "value": "grid md:grid-cols-3 gap-8"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 48,
+      "parent": 43,
       "child": 51
     },
     {
@@ -1084,24 +940,24 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 52,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 31,
+      "parent": 51,
       "child": 52
     },
     {
       "op": "CREATE_NODE",
       "id": 53,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 53,
-      "key": "style",
-      "value": "gap: 16px;"
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -1111,18 +967,13 @@
     {
       "op": "CREATE_NODE",
       "id": 54,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 54,
-      "value": "\ud83e\udde9"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 54,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "key": "class",
+      "value": "material-symbols-outlined text-primary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
@@ -1132,86 +983,74 @@
     {
       "op": "CREATE_NODE",
       "id": 55,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 55,
-      "value": "Intermediate Representation"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 55,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "layers"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 53,
+      "parent": 54,
       "child": 55
     },
     {
       "op": "CREATE_NODE",
       "id": 56,
-      "tag": "p"
+      "tag": "h3"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 56,
-      "value": "Your .tin files compile to a compact JSON IR, enabling future optimizations and alternative backends."
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-primary"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 53,
+      "parent": 52,
       "child": 56
     },
     {
       "op": "CREATE_NODE",
       "id": 57,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 57,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; background-color: rgba(18, 19, 28, 0.75); border: 1px solid rgba(255,255,255,0.1); max-width: 400px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "value": "Zero-DOM Engine"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 31,
+      "parent": 56,
       "child": 57
     },
     {
       "op": "CREATE_NODE",
       "id": 58,
-      "tag": "Column"
+      "tag": "p"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 58,
-      "key": "style",
-      "value": "gap: 16px;"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 57,
+      "parent": 52,
       "child": 58
     },
     {
       "op": "CREATE_NODE",
       "id": 59,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 59,
-      "value": "\ud83d\udd0b"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 59,
-      "key": "style",
-      "value": "font-size: 1.25rem; margin: 0;"
+      "value": "Renders directly to a WebGL canvas, bypassing the DOM entirely for zero reflow and repaint overhead."
     },
     {
       "op": "APPEND_CHILD",
@@ -1221,76 +1060,60 @@
     {
       "op": "CREATE_NODE",
       "id": 60,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 60,
-      "value": "Self-Contained"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 60,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "glass-card neon-border-cyan p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 58,
+      "parent": 51,
       "child": 60
     },
     {
       "op": "CREATE_NODE",
       "id": 61,
-      "tag": "p"
+      "tag": "div"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 61,
-      "value": "Built-in dev server, WASM bootloader, and event system. One install, one command, running app."
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 58,
+      "parent": 60,
       "child": 61
     },
     {
       "op": "CREATE_NODE",
       "id": 62,
-      "tag": "div"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 62,
-      "key": "id",
-      "value": "showcase"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 62,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 1200px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;"
+      "key": "class",
+      "value": "material-symbols-outlined text-secondary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 61,
       "child": 62
     },
     {
       "op": "CREATE_NODE",
       "id": 63,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 63,
-      "value": "Live Showcase"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 63,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-weight: bold;"
+      "value": "speed"
     },
     {
       "op": "APPEND_CHILD",
@@ -1300,121 +1123,91 @@
     {
       "op": "CREATE_NODE",
       "id": 64,
-      "tag": "Spacer"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 64,
-      "key": "height",
-      "value": "20"
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-secondary"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 62,
+      "parent": 60,
       "child": 64
     },
     {
       "op": "CREATE_NODE",
       "id": 65,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 65,
-      "value": "See what TinPyUI components look like in action"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 65,
-      "key": "style",
-      "value": "align-items: center;"
+      "value": "Wasm Performance"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 62,
+      "parent": 64,
       "child": 65
     },
     {
       "op": "CREATE_NODE",
       "id": 66,
-      "tag": "Spacer"
+      "tag": "p"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 66,
-      "key": "height",
-      "value": "60"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 62,
+      "parent": 60,
       "child": 66
     },
     {
       "op": "CREATE_NODE",
       "id": 67,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 67,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 30px; justify-content: center;"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 67,
-      "key": "wrap",
-      "value": "true"
+      "value": "The compiled .tin kernel runs at near-native speed, achieving 120+ FPS on complex real-time scenes."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 62,
+      "parent": 66,
       "child": 67
     },
     {
       "op": "CREATE_NODE",
       "id": 68,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 68,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 68,
-      "key": "minWidth",
-      "value": "280"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 68,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; max-width: 350px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 67,
+      "parent": 51,
       "child": 68
     },
     {
       "op": "CREATE_NODE",
       "id": 69,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 69,
-      "value": "Neon Buttons"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 69,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -1424,192 +1217,122 @@
     {
       "op": "CREATE_NODE",
       "id": 70,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 70,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "material-symbols-outlined text-tertiary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 68,
+      "parent": 69,
       "child": 70
     },
     {
       "op": "CREATE_NODE",
       "id": 71,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 71,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 12px; justify-content: center;"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 71,
-      "key": "wrap",
-      "value": "true"
+      "value": "code"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 68,
+      "parent": 70,
       "child": 71
     },
     {
       "op": "CREATE_NODE",
       "id": 72,
-      "tag": "button"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 72,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 72,
-      "value": "Primary"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 72,
-      "key": "style",
-      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease; background-color: #00f2fe; color: #0a0b10; --hover-color: #00f2fe; padding: 14px; border-radius: 8px; font-weight: bold;"
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-tertiary"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 71,
+      "parent": 68,
       "child": 72
     },
     {
       "op": "CREATE_NODE",
       "id": 73,
-      "tag": "button"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 73,
-      "key": "data-hover-glow",
-      "value": "#9b51e0"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 73,
-      "value": "Success"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 73,
-      "key": "style",
-      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease; background-color: #9b51e0; color: #ffffff; --hover-color: #9b51e0; padding: 14px; border-radius: 8px; font-weight: bold;"
+      "value": "Pythonic Syntax"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 71,
+      "parent": 72,
       "child": 73
     },
     {
       "op": "CREATE_NODE",
       "id": 74,
-      "tag": "button"
+      "tag": "p"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 74,
-      "key": "data-hover-glow",
-      "value": "#ff007f"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 74,
-      "value": "Danger"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 74,
-      "key": "style",
-      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease; background-color: #ff007f; color: #0a0b10; --hover-color: #ff007f; padding: 14px; border-radius: 8px; font-weight: bold;"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 71,
+      "parent": 68,
       "child": 74
     },
     {
       "op": "CREATE_NODE",
       "id": 75,
-      "tag": "button"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 75,
-      "key": "data-hover-glow",
-      "value": "#9b51e0"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 75,
-      "value": "Ghost"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 75,
-      "key": "style",
-      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease; border: 1px solid #9b51e0; color: #9b51e0; --hover-color: #9b51e0; padding: 14px; border-radius: 8px; font-weight: bold;"
+      "value": "Write declarative UI in pure Python. No HTML, no JSX — just clean, elegant .tin files."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 71,
+      "parent": 74,
       "child": 75
     },
     {
       "op": "CREATE_NODE",
       "id": 76,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 76,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 76,
-      "key": "minWidth",
-      "value": "280"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 76,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; max-width: 350px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 67,
+      "parent": 51,
       "child": 76
     },
     {
       "op": "CREATE_NODE",
       "id": 77,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 77,
-      "value": "Interactive Counter"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 77,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -1619,56 +1342,44 @@
     {
       "op": "CREATE_NODE",
       "id": 78,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 78,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "material-symbols-outlined text-primary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 76,
+      "parent": 77,
       "child": 78
     },
     {
       "op": "CREATE_NODE",
       "id": 79,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 79,
-      "key": "data-bind",
-      "value": "counterVal"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 79,
-      "value": "42"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 79,
-      "key": "style",
-      "value": "align-items: center; color: #00f2fe; font-weight: bold;"
+      "value": "bolt"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 76,
+      "parent": 78,
       "child": 79
     },
     {
       "op": "CREATE_NODE",
       "id": 80,
-      "tag": "Spacer"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 80,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-primary"
     },
     {
       "op": "APPEND_CHILD",
@@ -1678,17 +1389,16 @@
     {
       "op": "CREATE_NODE",
       "id": 81,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 81,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 12px; justify-content: center;"
+      "value": "Hot Reload"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 76,
+      "parent": 80,
       "child": 81
     },
     {
@@ -1699,113 +1409,55 @@
     {
       "op": "SET_ATTRIBUTE",
       "id": 82,
-      "key": "bg",
-      "value": "neon-pink"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 82,
-      "key": "data-action",
-      "value": "decrement"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 82,
-      "key": "data-hover-glow",
-      "value": "#ff007f"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 82,
-      "value": "-"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 82,
-      "key": "style",
-      "value": "--hover-color: #ff007f; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 10px 20pxpx; border-radius: 8px; font-weight: bold;"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 81,
+      "parent": 76,
       "child": 82
     },
     {
       "op": "CREATE_NODE",
       "id": 83,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 83,
-      "key": "bg",
-      "value": "neon-green"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 83,
-      "key": "data-action",
-      "value": "increment"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 83,
-      "value": "+"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 83,
-      "key": "style",
-      "value": "padding: 10px 20pxpx; border-radius: 8px; font-weight: bold;"
+      "value": "Instant live preview on every save. The Wasm kernel reconciles UI state in microseconds."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 81,
+      "parent": 82,
       "child": 83
     },
     {
       "op": "CREATE_NODE",
       "id": 84,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 84,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 84,
-      "key": "minWidth",
-      "value": "280"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 84,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; max-width: 350px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "glass-card neon-border-cyan p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 67,
+      "parent": 51,
       "child": 84
     },
     {
       "op": "CREATE_NODE",
       "id": 85,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 85,
-      "value": "State Binding"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 85,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -1815,63 +1467,44 @@
     {
       "op": "CREATE_NODE",
       "id": 86,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 86,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "material-symbols-outlined text-secondary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 84,
+      "parent": 85,
       "child": 86
     },
     {
       "op": "CREATE_NODE",
       "id": 87,
-      "tag": "input"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 87,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.05)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 87,
-      "key": "data-bind",
-      "value": "demoInput"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 87,
-      "key": "placeholder",
-      "value": "Type something..."
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 87,
-      "key": "style",
-      "value": "outline: none; box-sizing: border-box; background: rgba(0,0,0,0.2); color: #ffffff; padding: 12px; border-radius: 8px; width: 100%;"
+      "value": "sync"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 84,
+      "parent": 86,
       "child": 87
     },
     {
       "op": "CREATE_NODE",
       "id": 88,
-      "tag": "Spacer"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 88,
-      "key": "height",
-      "value": "12"
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-secondary"
     },
     {
       "op": "APPEND_CHILD",
@@ -1881,17 +1514,16 @@
     {
       "op": "CREATE_NODE",
       "id": 89,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 89,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 8px; justify-content: center;"
+      "value": "Reactive State"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 84,
+      "parent": 88,
       "child": 89
     },
     {
@@ -1900,84 +1532,57 @@
       "tag": "p"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 90,
-      "value": "You typed:"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 89,
+      "parent": 84,
       "child": 90
     },
     {
       "op": "CREATE_NODE",
       "id": 91,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 91,
-      "key": "data-bind",
-      "value": "demoInput"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
-      "id": 91
-    },
-    {
-      "op": "SET_ATTRIBUTE",
       "id": 91,
-      "key": "style",
-      "value": "color: #00f2fe; font-weight: bold;"
+      "value": "First-class reactivity built into the runtime. No virtual DOM diffing or reconciliation needed."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 89,
+      "parent": 90,
       "child": 91
     },
     {
       "op": "CREATE_NODE",
       "id": 92,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 92,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 92,
-      "key": "minWidth",
-      "value": "280"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 92,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; max-width: 350px; width: 100%; margin-left: auto; margin-right: auto; padding: 32px; border-radius: 16px;"
+      "key": "class",
+      "value": "glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 67,
+      "parent": 51,
       "child": 92
     },
     {
       "op": "CREATE_NODE",
       "id": 93,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 93,
-      "value": "Core Animations"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 93,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center"
     },
     {
       "op": "APPEND_CHILD",
@@ -1987,50 +1592,44 @@
     {
       "op": "CREATE_NODE",
       "id": 94,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 94,
-      "key": "height",
-      "value": "16"
+      "key": "class",
+      "value": "material-symbols-outlined text-tertiary text-3xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 92,
+      "parent": 93,
       "child": 94
     },
     {
       "op": "CREATE_NODE",
       "id": 95,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 95,
-      "value": "Pulse Animation"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 95,
-      "key": "style",
-      "value": "align-items: center; animation: pulse 2s infinite ease-in-out; color: #00f2fe;"
+      "value": "devices"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 92,
+      "parent": 94,
       "child": 95
     },
     {
       "op": "CREATE_NODE",
       "id": 96,
-      "tag": "Spacer"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 96,
-      "key": "height",
-      "value": "10"
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-tertiary"
     },
     {
       "op": "APPEND_CHILD",
@@ -2040,34 +1639,28 @@
     {
       "op": "CREATE_NODE",
       "id": 97,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 97,
-      "value": "Fade In Up"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 97,
-      "key": "style",
-      "value": "align-items: center; animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; color: #9b51e0;"
+      "value": "Cross-Platform"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 92,
+      "parent": 96,
       "child": 97
     },
     {
       "op": "CREATE_NODE",
       "id": 98,
-      "tag": "Spacer"
+      "tag": "p"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 98,
-      "key": "height",
-      "value": "10"
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant"
     },
     {
       "op": "APPEND_CHILD",
@@ -2077,67 +1670,50 @@
     {
       "op": "CREATE_NODE",
       "id": 99,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 99,
-      "key": "bg",
-      "value": "neon-green"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 99,
-      "value": "Animated Button"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 99,
-      "key": "style",
-      "value": "animation: pulse 2s infinite ease-in-out; padding: 8px 16pxpx; border-radius: 8px; font-weight: bold;"
+      "value": "Deploy to web, desktop via Electron, and mobile — all from a single .tin codebase."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 92,
+      "parent": 98,
       "child": 99
     },
     {
       "op": "CREATE_NODE",
       "id": 100,
-      "tag": "div"
+      "tag": "section"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 100,
+      "key": "class",
+      "value": "py-24 bg-surface-container-lowest/10 backdrop-blur-sm reveal-section active"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 100,
       "key": "id",
-      "value": "animations"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 100,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 1200px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;"
+      "value": "install"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 24,
       "child": 100
     },
     {
       "op": "CREATE_NODE",
       "id": 101,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 101,
-      "value": "Available Animation Features"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 101,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-weight: bold;"
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop"
     },
     {
       "op": "APPEND_CHILD",
@@ -2147,94 +1723,75 @@
     {
       "op": "CREATE_NODE",
       "id": 102,
-      "tag": "Spacer"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 102,
-      "key": "height",
-      "value": "20"
+      "key": "class",
+      "value": "text-center mb-16"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 100,
+      "parent": 101,
       "child": 102
     },
     {
       "op": "CREATE_NODE",
       "id": 103,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 103,
-      "value": "Powered by WebGL, GSAP, and native WASM performance"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 103,
-      "key": "style",
-      "value": "align-items: center;"
+      "key": "class",
+      "value": "font-label-caps text-tertiary tracking-widest block mb-4"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 100,
+      "parent": 102,
       "child": 103
     },
     {
       "op": "CREATE_NODE",
       "id": 104,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 104,
-      "key": "height",
-      "value": "60"
+      "value": "QUICK START"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 100,
+      "parent": 103,
       "child": 104
     },
     {
       "op": "CREATE_NODE",
       "id": 105,
-      "tag": "Grid"
+      "tag": "h2"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 105,
-      "key": "cols",
-      "value": "2"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 105,
-      "key": "style",
-      "value": "gap: 32px;"
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 100,
+      "parent": 102,
       "child": 105
     },
     {
       "op": "CREATE_NODE",
       "id": 106,
-      "tag": "Column"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 106,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 106,
-      "key": "style",
-      "value": "align-items: center; padding: 40px; border-radius: 16px;"
+      "value": "Installation Guide"
     },
     {
       "op": "APPEND_CHILD",
@@ -2247,86 +1804,57 @@
       "tag": "p"
     },
     {
-      "op": "SET_TEXT",
-      "id": 107,
-      "value": "Marquee Animation"
-    },
-    {
       "op": "SET_ATTRIBUTE",
       "id": 107,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "text-on-surface-variant mt-4 font-body-lg max-w-xl mx-auto"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 106,
+      "parent": 102,
       "child": 107
     },
     {
       "op": "CREATE_NODE",
       "id": 108,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 108,
-      "key": "height",
-      "value": "30"
+      "value": "Get TinPyUI running in seconds. Choose your preferred package manager."
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 106,
+      "parent": 107,
       "child": 108
     },
     {
       "op": "CREATE_NODE",
       "id": 109,
-      "tag": "marquee"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 109,
-      "key": "direction",
-      "value": "left"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 109,
-      "key": "scrollamount",
-      "value": "12"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 109,
-      "key": "speed",
-      "value": "fast"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 109,
-      "key": "style",
-      "value": "display: flex; white-space: nowrap; overflow: hidden; width: 100%; font-family: monospace;"
+      "key": "class",
+      "value": "grid md:grid-cols-2 gap-8 mb-8"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 106,
+      "parent": 101,
       "child": 109
     },
     {
       "op": "CREATE_NODE",
       "id": 110,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 110,
-      "value": "\u2605 Fast \u2605 Pythonic \u2605 Zero Dependencies \u2605 Native DOM \u2605 WebAssembly \u2605 "
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 110,
-      "key": "style",
-      "value": "color: #00f2fe; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "glass-card p-8 border-tertiary/30"
     },
     {
       "op": "APPEND_CHILD",
@@ -2336,40 +1864,29 @@
     {
       "op": "CREATE_NODE",
       "id": 111,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 111,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 111,
-      "key": "style",
-      "value": "align-items: center; padding: 40px; border-radius: 16px;"
+      "key": "class",
+      "value": "flex items-center gap-3 mb-6"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 105,
+      "parent": 110,
       "child": 111
     },
     {
       "op": "CREATE_NODE",
       "id": 112,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 112,
-      "value": "Text Reveal"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 112,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "material-symbols-outlined text-tertiary text-2xl"
     },
     {
       "op": "APPEND_CHILD",
@@ -2379,34 +1896,28 @@
     {
       "op": "CREATE_NODE",
       "id": 113,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 113,
-      "key": "height",
-      "value": "30"
+      "value": "terminal"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 111,
+      "parent": 112,
       "child": 113
     },
     {
       "op": "CREATE_NODE",
       "id": 114,
-      "tag": "TextReveal"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 114,
-      "value": "Hover or scroll to reveal me natively"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 114,
-      "key": "style",
-      "value": "color: #9b51e0; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "font-headline-md text-tertiary"
     },
     {
       "op": "APPEND_CHILD",
@@ -2416,187 +1927,131 @@
     {
       "op": "CREATE_NODE",
       "id": 115,
-      "tag": "Column"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 115,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 115,
-      "key": "style",
-      "value": "align-items: center; padding: 40px; border-radius: 16px;"
+      "value": "Python / pip"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 105,
+      "parent": 114,
       "child": 115
     },
     {
       "op": "CREATE_NODE",
       "id": 116,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 116,
-      "value": "Morph Shape"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 116,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm mb-6"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 115,
+      "parent": 110,
       "child": 116
     },
     {
       "op": "CREATE_NODE",
       "id": 117,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 117,
-      "key": "height",
-      "value": "30"
+      "key": "class",
+      "value": "text-[#8b949e]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 115,
+      "parent": 116,
       "child": 117
     },
     {
       "op": "CREATE_NODE",
       "id": 118,
-      "tag": "MorphShape"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 118,
-      "key": "duration",
-      "value": "2.0"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 118,
-      "key": "fromShape",
-      "value": "circle"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 118,
-      "key": "toShape",
-      "value": "square"
+      "value": "# Install via pip"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 115,
+      "parent": 117,
       "child": 118
     },
     {
       "op": "CREATE_NODE",
       "id": 119,
-      "tag": "Column"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 119,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.03)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 119,
-      "key": "style",
-      "value": "align-items: center; padding: 40px; border-radius: 16px;"
+      "tag": "br"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 105,
+      "parent": 116,
       "child": 119
     },
     {
       "op": "CREATE_NODE",
       "id": 120,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 120,
-      "value": "3D Scene Engine"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 120,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "text-[#27c93f]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 119,
+      "parent": 116,
       "child": 120
     },
     {
       "op": "CREATE_NODE",
       "id": 121,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 121,
-      "key": "height",
-      "value": "30"
+      "value": "$ "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 119,
+      "parent": 120,
       "child": 121
     },
     {
       "op": "CREATE_NODE",
       "id": 122,
-      "tag": "Scene3D"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 122,
-      "key": "height",
-      "value": "150"
+      "key": "class",
+      "value": "text-[#c9d1d9]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 119,
+      "parent": 116,
       "child": 122
     },
     {
       "op": "CREATE_NODE",
       "id": 123,
-      "tag": "Light3D"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 123,
-      "key": "intensity",
-      "value": "0.5"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 123,
-      "key": "style",
-      "value": "color: #ffffff;"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 123,
-      "key": "type",
-      "value": "ambient"
+      "value": "pip install tinpyui-ff"
     },
     {
       "op": "APPEND_CHILD",
@@ -2606,96 +2061,71 @@
     {
       "op": "CREATE_NODE",
       "id": 124,
-      "tag": "Light3D"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 124,
-      "key": "intensity",
-      "value": "1.0"
+      "key": "class",
+      "value": "inline-flex items-center gap-2 text-tertiary font-bold hover:gap-4 transition-all font-body-md"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 124,
-      "key": "style",
-      "value": "color: #ffffff; position: [\"5\",\"5\",\"5\"];"
+      "key": "href",
+      "value": "https://pypi.org/project/tinpyui-ff/"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 124,
-      "key": "type",
-      "value": "directional"
+      "key": "target",
+      "value": "_blank"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 122,
+      "parent": 110,
       "child": 124
     },
     {
       "op": "CREATE_NODE",
       "id": 125,
-      "tag": "Mesh3D"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 125,
-      "key": "geometry",
-      "value": "cube"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 125,
-      "key": "material",
-      "value": "standard"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 125,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "value": "View on PyPI "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 122,
+      "parent": 124,
       "child": 125
     },
     {
       "op": "CREATE_NODE",
       "id": 126,
-      "tag": "div"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 126,
-      "key": "id",
-      "value": "reviews"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 126,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 1000px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;"
+      "key": "class",
+      "value": "material-symbols-outlined text-base"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 124,
       "child": 126
     },
     {
       "op": "CREATE_NODE",
       "id": 127,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 127,
-      "value": "Developer Reviews"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 127,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-weight: bold;"
+      "value": "arrow_forward"
     },
     {
       "op": "APPEND_CHILD",
@@ -2705,152 +2135,123 @@
     {
       "op": "CREATE_NODE",
       "id": 128,
-      "tag": "Spacer"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 128,
-      "key": "height",
-      "value": "20"
+      "key": "class",
+      "value": "glass-card p-8 border-secondary/30"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 109,
       "child": 128
     },
     {
       "op": "CREATE_NODE",
       "id": 129,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 129,
-      "value": "What the community is saying about TinPyUI"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 129,
-      "key": "style",
-      "value": "align-items: center;"
+      "key": "class",
+      "value": "flex items-center gap-3 mb-6"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 128,
       "child": 129
     },
     {
       "op": "CREATE_NODE",
       "id": 130,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 130,
-      "key": "height",
-      "value": "60"
+      "key": "class",
+      "value": "material-symbols-outlined text-secondary text-2xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 129,
       "child": 130
     },
     {
       "op": "CREATE_NODE",
       "id": 131,
-      "tag": "Grid"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 131,
-      "key": "cols",
-      "value": "3"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 131,
-      "key": "id",
-      "value": "reviewsList"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 131,
-      "key": "style",
-      "value": "gap: 24px;"
+      "value": "package_2"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 130,
       "child": 131
     },
     {
       "op": "CREATE_NODE",
       "id": 132,
-      "tag": "p"
+      "tag": "h3"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 132,
-      "value": "Loading community reviews..."
+      "key": "class",
+      "value": "font-headline-md text-secondary"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 131,
+      "parent": 129,
       "child": 132
     },
     {
       "op": "CREATE_NODE",
       "id": 133,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 133,
-      "key": "height",
-      "value": "60"
+      "value": "JavaScript / npm"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 132,
       "child": 133
     },
     {
       "op": "CREATE_NODE",
       "id": 134,
-      "tag": "Column"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 134,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.02)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 134,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; max-width: 600px; width: 100%; margin-left: auto; margin-right: auto; padding: 40px; border-radius: 16px;"
+      "key": "class",
+      "value": "bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm mb-6"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 126,
+      "parent": 128,
       "child": 134
     },
     {
       "op": "CREATE_NODE",
       "id": 135,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 135,
-      "value": "Leave a Review"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 135,
-      "key": "style",
-      "value": "color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "key": "class",
+      "value": "text-[#8b949e]"
     },
     {
       "op": "APPEND_CHILD",
@@ -2860,65 +2261,22 @@
     {
       "op": "CREATE_NODE",
       "id": 136,
-      "tag": "input"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 136,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.05)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 136,
-      "key": "data-bind",
-      "value": "reviewName"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 136,
-      "key": "placeholder",
-      "value": "Your Name"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 136,
-      "key": "style",
-      "value": "outline: none; box-sizing: border-box; background: rgba(0,0,0,0.2); color: #ffffff; padding: 12px; border-radius: 8px; width: 100%;"
+      "value": "# Install via npm"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 134,
+      "parent": 135,
       "child": 136
     },
     {
       "op": "CREATE_NODE",
       "id": 137,
-      "tag": "input"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 137,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.05)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 137,
-      "key": "data-bind",
-      "value": "reviewHandle"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 137,
-      "key": "placeholder",
-      "value": "Your Handle (@username)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 137,
-      "key": "style",
-      "value": "outline: none; box-sizing: border-box; background: rgba(0,0,0,0.2); color: #ffffff; padding: 12px; border-radius: 8px; width: 100%;"
+      "tag": "br"
     },
     {
       "op": "APPEND_CHILD",
@@ -2928,31 +2286,13 @@
     {
       "op": "CREATE_NODE",
       "id": 138,
-      "tag": "input"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 138,
-      "key": "bg",
-      "value": "rgba(255,255,255,0.05)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 138,
-      "key": "data-bind",
-      "value": "reviewContent"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 138,
-      "key": "placeholder",
-      "value": "Write your review..."
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 138,
-      "key": "style",
-      "value": "outline: none; box-sizing: border-box; background: rgba(0,0,0,0.2); color: #ffffff; padding: 12px; border-radius: 8px; width: 100%;"
+      "key": "class",
+      "value": "text-[#27c93f]"
     },
     {
       "op": "APPEND_CHILD",
@@ -2962,73 +2302,43 @@
     {
       "op": "CREATE_NODE",
       "id": 139,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 139,
-      "key": "bg",
-      "value": "neon-cyan"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 139,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 139,
-      "value": "Submit Review"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 139,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 12px 24pxpx; border-radius: 8px; font-weight: bold;"
+      "value": "$ "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 134,
+      "parent": 138,
       "child": 139
     },
     {
       "op": "CREATE_NODE",
       "id": 140,
-      "tag": "div"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 140,
-      "key": "id",
-      "value": "install"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 140,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 800px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;"
+      "key": "class",
+      "value": "text-[#c9d1d9]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 134,
       "child": 140
     },
     {
       "op": "CREATE_NODE",
       "id": 141,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 141,
-      "value": "Install in 30 Seconds"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 141,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-weight: bold;"
+      "value": "npm install tinpyui"
     },
     {
       "op": "APPEND_CHILD",
@@ -3038,300 +2348,212 @@
     {
       "op": "CREATE_NODE",
       "id": 142,
-      "tag": "Spacer"
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 142,
-      "key": "height",
-      "value": "40"
+      "key": "class",
+      "value": "inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all font-body-md"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 142,
+      "key": "href",
+      "value": "https://www.npmjs.com/package/tinpyui"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 142,
+      "key": "target",
+      "value": "_blank"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 128,
       "child": 142
     },
     {
       "op": "CREATE_NODE",
       "id": 143,
-      "tag": "Column"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 143,
-      "key": "bg",
-      "value": "#0f0f15"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 143,
-      "key": "style",
-      "value": "gap: 0px; padding: 24px; border-radius: 16px;"
+      "value": "View on npm "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 142,
       "child": 143
     },
     {
       "op": "CREATE_NODE",
       "id": 144,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 144,
-      "key": "font",
-      "value": "monospace"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 144,
-      "value": "npm install -g tinpyui"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 144,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "key": "class",
+      "value": "material-symbols-outlined text-base"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 143,
+      "parent": 142,
       "child": 144
     },
     {
       "op": "CREATE_NODE",
       "id": 145,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 145,
-      "key": "font",
-      "value": "monospace"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 145,
-      "value": "tinpyui init my-app"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 145,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "value": "arrow_forward"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 143,
+      "parent": 144,
       "child": 145
     },
     {
       "op": "CREATE_NODE",
       "id": 146,
-      "tag": "p"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 146,
-      "key": "font",
-      "value": "monospace"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 146,
-      "value": "cd my-app"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 146,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "key": "class",
+      "value": "glass-card p-8 border-primary/30"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 143,
+      "parent": 101,
       "child": 146
     },
     {
       "op": "CREATE_NODE",
       "id": 147,
-      "tag": "p"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 147,
-      "key": "font",
-      "value": "monospace"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 147,
-      "value": "tinpyui compile src/index.tin"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 147,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "key": "class",
+      "value": "flex items-center gap-3 mb-6"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 143,
+      "parent": 146,
       "child": 147
     },
     {
       "op": "CREATE_NODE",
       "id": 148,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 148,
-      "key": "font",
-      "value": "monospace"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 148,
-      "value": "tinpyui serve"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 148,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "key": "class",
+      "value": "material-symbols-outlined text-primary text-2xl"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 143,
+      "parent": 147,
       "child": 148
     },
     {
       "op": "CREATE_NODE",
       "id": 149,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 149,
-      "key": "height",
-      "value": "20"
+      "value": "rocket_launch"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 148,
       "child": 149
     },
     {
       "op": "CREATE_NODE",
       "id": 150,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 150,
-      "value": "Then open http://localhost:3000"
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 150,
-      "key": "style",
-      "value": "align-items: center;"
+      "key": "class",
+      "value": "font-headline-md text-primary"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 147,
       "child": 150
     },
     {
       "op": "CREATE_NODE",
       "id": 151,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 151,
-      "key": "height",
-      "value": "30"
+      "value": "Quick Start — Hello World"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 150,
       "child": 151
     },
     {
       "op": "CREATE_NODE",
       "id": 152,
-      "tag": "p"
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 152,
-      "key": "bg",
-      "value": "neon-cyan"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 152,
-      "key": "data-action",
-      "value": "copyInstall"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 152,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 152,
-      "value": "Copy to Clipboard"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 152,
-      "key": "style",
-      "value": "align-items: center; --hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 14px 32pxpx; border-radius: 12px; font-weight: bold;"
+      "key": "class",
+      "value": "bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm leading-relaxed"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 140,
+      "parent": 146,
       "child": 152
     },
     {
       "op": "CREATE_NODE",
       "id": 153,
-      "tag": "div"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 153,
-      "key": "style",
-      "value": "display: flex; flex-direction: column; box-sizing: border-box; align-items: center; max-width: 900px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 80px; padding-bottom: 80px;"
+      "key": "class",
+      "value": "text-[#8b949e]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 152,
       "child": 153
     },
     {
       "op": "CREATE_NODE",
       "id": 154,
-      "tag": "Column"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 154,
-      "key": "bg",
-      "value": "rgba(139,92,246,0.08)"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 154,
-      "key": "style",
-      "value": "align-items: center; gap: 20px; padding: 60px; border-radius: 24px;"
+      "value": "# Create your first component in .tin syntax"
     },
     {
       "op": "APPEND_CHILD",
@@ -3341,212 +2563,140 @@
     {
       "op": "CREATE_NODE",
       "id": 155,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 155,
-      "value": "\u25c9"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 155,
-      "key": "style",
-      "value": "color: #00f2fe; font-size: 1.25rem; margin: 0;"
+      "tag": "br"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 152,
       "child": 155
     },
     {
       "op": "CREATE_NODE",
       "id": 156,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 156,
-      "key": "height",
-      "value": "10"
+      "key": "class",
+      "value": "text-[#ff7b72]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 152,
       "child": 156
     },
     {
       "op": "CREATE_NODE",
       "id": 157,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 157,
-      "value": "Ready to build the future?"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 157,
-      "key": "style",
-      "value": "align-items: center; color: #ffffff; font-size: 1.25rem; margin: 0; font-weight: bold;"
+      "value": "component "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 156,
       "child": 157
     },
     {
       "op": "CREATE_NODE",
       "id": 158,
-      "tag": "p"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 158,
-      "value": "TinPyUI is MIT licensed and open source. Contributions welcome."
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 158,
-      "key": "style",
-      "value": "align-items: center;"
+      "key": "class",
+      "value": "text-[#d2a8ff]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 152,
       "child": 158
     },
     {
       "op": "CREATE_NODE",
       "id": 159,
-      "tag": "Spacer"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 159,
-      "key": "height",
-      "value": "20"
+      "value": "HelloWorld"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 158,
       "child": 159
     },
     {
       "op": "CREATE_NODE",
       "id": 160,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 160,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 20px; justify-content: center;"
+      "value": "():"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 154,
+      "parent": 152,
       "child": 160
     },
     {
       "op": "CREATE_NODE",
       "id": 161,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "bg",
-      "value": "neon-cyan"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "data-action",
-      "value": "openGithub"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "data-hover-glow",
-      "value": "#00f2fe"
-    },
-    {
-      "op": "SET_TEXT",
-      "id": 161,
-      "value": "Star on GitHub"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "style",
-      "value": "--hover-color: #00f2fe; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 14px 32pxpx; border-radius: 12px; font-weight: bold;"
+      "tag": "br"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 160,
+      "parent": 152,
       "child": 161
     },
     {
       "op": "CREATE_NODE",
       "id": 162,
-      "tag": "p"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 162,
-      "key": "data-action",
-      "value": "openNpm"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 162,
-      "key": "data-hover-glow",
-      "value": "#9b51e0"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 162,
-      "value": "View on npm"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 162,
-      "key": "style",
-      "value": "color: #9b51e0; --hover-color: #9b51e0; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); padding: 14px 32pxpx; border-radius: 12px; font-weight: bold;"
+      "value": "    "
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 160,
+      "parent": 152,
       "child": 162
     },
     {
       "op": "CREATE_NODE",
       "id": 163,
-      "tag": "Footer"
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
       "id": 163,
-      "key": "style",
-      "value": "align-items: center; padding: 40px;"
+      "key": "class",
+      "value": "text-[#d2a8ff]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 1,
+      "parent": 152,
       "child": 163
     },
     {
       "op": "CREATE_NODE",
       "id": 164,
-      "tag": "div"
+      "tag": "span"
     },
     {
-      "op": "SET_ATTRIBUTE",
+      "op": "SET_TEXT",
       "id": 164,
-      "key": "style",
-      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 8px;"
+      "value": "Container"
     },
     {
       "op": "APPEND_CHILD",
@@ -3556,196 +2706,3535 @@
     {
       "op": "CREATE_NODE",
       "id": 165,
-      "tag": "p"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 165,
-      "value": "\u25c9"
-    },
-    {
-      "op": "SET_ATTRIBUTE",
-      "id": 165,
-      "key": "style",
-      "value": "color: #00f2fe;"
+      "value": "(padding="
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 164,
+      "parent": 152,
       "child": 165
     },
     {
       "op": "CREATE_NODE",
       "id": 166,
-      "tag": "p"
+      "tag": "span"
     },
     {
-      "op": "SET_TEXT",
+      "op": "SET_ATTRIBUTE",
       "id": 166,
-      "value": "\u00a9 2026 TinPyUI by Barathanandh. Built with passion and WebAssembly."
+      "key": "class",
+      "value": "text-[#79c0ff]"
     },
     {
       "op": "APPEND_CHILD",
-      "parent": 164,
+      "parent": 152,
       "child": 166
     },
     {
       "op": "CREATE_NODE",
       "id": 167,
-      "tag": "style"
+      "tag": "span"
     },
     {
       "op": "SET_TEXT",
       "id": 167,
-      "value": "@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } [data-hover-glow] { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important; cursor: pointer; } [data-hover-glow]:hover { box-shadow: 0 0 25px var(--hover-color, currentColor) !important; transform: translateY(-2px) scale(1.02) !important; } @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.03); opacity: 0.8; } }"
+      "value": "20"
     },
     {
       "op": "APPEND_CHILD",
+      "parent": 166,
       "child": 167
     },
     {
-      "op": "SET_ATTRIBUTE",
-      "id": 8,
-      "key": "data-action",
-      "value": "scrollToFeatures"
+      "op": "CREATE_NODE",
+      "id": 168,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 168,
+      "value": "):"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 168
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 169,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 169
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 170,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 170,
+      "value": "        "
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 170
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 171,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 8,
+      "id": 171,
+      "key": "class",
+      "value": "text-[#d2a8ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 171
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 172,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 172,
+      "value": "GradientText"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 171,
+      "child": 172
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 173,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 173,
+      "value": "(text="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 173
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 174,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 174,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 174
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 175,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 175,
+      "value": "'Hello, TinPyUI!'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 174,
+      "child": 175
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 176,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 176,
+      "value": ")"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 176
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 177,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 177
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 178,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 178,
+      "value": "        "
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 178
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 179,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 179,
+      "key": "class",
+      "value": "text-[#d2a8ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 179
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 180,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 180,
+      "value": "Button"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 179,
+      "child": 180
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 181,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 181,
+      "value": "(text="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 181
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 182,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 182,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 182
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 183,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 183,
+      "value": "'Click Me'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 182,
+      "child": 183
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 184,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 184,
+      "value": ", color="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 184
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 185,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 185,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 185
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 186,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 186,
+      "value": "'neon-cyan'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 185,
+      "child": 186
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 187,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 187,
+      "value": ")"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 187
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 188,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 188
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 189,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 189
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 190,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 190,
+      "key": "class",
+      "value": "text-[#d2a8ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 190
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 191,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 191,
+      "value": "mount"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 190,
+      "child": 191
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 192,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 192,
+      "value": "(HelloWorld)"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 152,
+      "child": 192
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 193,
+      "tag": "section"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 193,
+      "key": "class",
+      "value": "py-24 bg-surface-container-lowest/10 backdrop-blur-sm reveal-section active"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 24,
+      "child": 193
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 194,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 194,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 193,
+      "child": 194
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 195,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 195,
+      "key": "class",
+      "value": "text-center mb-16"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 194,
+      "child": 195
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 196,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 196,
+      "key": "class",
+      "value": "font-label-caps text-secondary tracking-widest block mb-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 195,
+      "child": 196
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 197,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 197,
+      "value": "RAW BENCHMARKS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 196,
+      "child": 197
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 198,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 198,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 195,
+      "child": 198
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 199,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 199,
+      "value": "Performance Lab"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 198,
+      "child": 199
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 200,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 200,
+      "key": "class",
+      "value": "grid md:grid-cols-2 gap-12"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 194,
+      "child": 200
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 201,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 201,
+      "key": "class",
+      "value": "glass-card p-10 border-error/30 relative"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 200,
+      "child": 201
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 202,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 202,
+      "key": "class",
+      "value": "absolute top-4 right-6 font-label-mono text-error text-xs"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 201,
+      "child": 202
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 203,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 203,
+      "value": "STATUS: BOTTLENECKED"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 202,
+      "child": 203
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 204,
+      "tag": "h4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 204,
+      "key": "class",
+      "value": "font-headline-md text-error mb-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 201,
+      "child": 204
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 205,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 205,
+      "value": "Legacy DOM"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 204,
+      "child": 205
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 206,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 206,
+      "key": "class",
+      "value": "space-y-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 201,
+      "child": 206
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 207,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 207,
+      "key": "class",
+      "value": "flex items-end gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 206,
+      "child": 207
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 208,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 208,
+      "key": "class",
+      "value": "font-display-lg text-[80px] text-error leading-none"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 208,
+      "key": "id",
+      "value": "legacy-fps"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 207,
+      "child": 208
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 209,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 209,
+      "value": "14"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 208,
+      "child": 209
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 210,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 210,
+      "key": "class",
+      "value": "font-label-mono text-on-surface-variant pb-2"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 207,
+      "child": 210
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 211,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 211,
+      "value": "FPS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 210,
+      "child": 211
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 212,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 212,
+      "key": "class",
+      "value": "h-2 w-full bg-error/10 rounded-full"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 206,
+      "child": 212
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 213,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 213,
+      "key": "class",
+      "value": "h-full bg-error w-[15%]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 212,
+      "child": 213
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 214,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 214,
+      "key": "class",
+      "value": "text-on-surface-variant text-sm font-body-md"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 206,
+      "child": 214
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 215,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 215,
+      "value": "Reflow/Repaint overhead stalling main thread during complex animation cycles."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 214,
+      "child": 215
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 216,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 216,
+      "key": "class",
+      "value": "glass-card p-10 border-primary/30 relative"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 200,
+      "child": 216
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 217,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 217,
+      "key": "class",
+      "value": "absolute top-4 right-6 font-label-mono text-primary text-xs flex items-center gap-2"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 216,
+      "child": 217
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 218,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 218,
+      "key": "class",
+      "value": "w-2 h-2 rounded-full bg-primary animate-ping"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 217,
+      "child": 218
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 219,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 219,
+      "value": "STABLE"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 217,
+      "child": 219
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 220,
+      "tag": "h4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 220,
+      "key": "class",
+      "value": "font-headline-md text-primary mb-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 216,
+      "child": 220
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 221,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 221,
+      "value": "TinPyUI Wasm"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 220,
+      "child": 221
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 222,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 222,
+      "key": "class",
+      "value": "space-y-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 216,
+      "child": 222
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 223,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 223,
+      "key": "class",
+      "value": "flex items-end gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 222,
+      "child": 223
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 224,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 224,
+      "key": "class",
+      "value": "font-display-lg text-[80px] text-primary leading-none"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 224,
+      "key": "id",
+      "value": "wasm-fps"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 223,
+      "child": 224
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 225,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 225,
+      "value": "120"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 224,
+      "child": 225
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 226,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 226,
+      "key": "class",
+      "value": "font-label-mono text-on-surface-variant pb-2"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 223,
+      "child": 226
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 227,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 227,
+      "value": "FPS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 226,
+      "child": 227
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 228,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 228,
+      "key": "class",
+      "value": "h-2 w-full bg-primary/10 rounded-full"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 222,
+      "child": 228
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 229,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 229,
+      "key": "class",
+      "value": "h-full bg-primary w-full shadow-[0_0_15px_rgba(207,188,255,0.5)]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 228,
+      "child": 229
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 230,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 230,
+      "key": "class",
+      "value": "text-on-surface-variant text-sm font-body-md"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 222,
+      "child": 230
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 231,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 231,
+      "value": "Direct GPU pipeline via WebAssembly. Zero DOM interaction, 100% efficient vector pushing."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 230,
+      "child": 231
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 232,
+      "tag": "section"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 232,
+      "key": "class",
+      "value": "py-24 bg-transparent reveal-section active"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 24,
+      "child": 232
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 233,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 233,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop text-center mb-16"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 232,
+      "child": 233
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 234,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 234,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 233,
+      "child": 234
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 235,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 235,
+      "value": "The Component Lab"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 234,
+      "child": 235
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 236,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 236,
+      "key": "class",
+      "value": "text-on-surface-variant mt-4 font-body-lg"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 233,
+      "child": 236
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 237,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 237,
+      "value": "Interactive primitives pulsing with reactive neural signals."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 236,
+      "child": 237
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 238,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 238,
+      "key": "class",
+      "value": "flex flex-wrap justify-center gap-12 items-center"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 232,
+      "child": 238
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 239,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 239,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 238,
+      "child": 239
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 240,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 240,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden group"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 239,
+      "child": 240
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 241,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 241,
+      "key": "class",
+      "value": "absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 240,
+      "child": 241
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 242,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 242,
+      "key": "class",
+      "value": "px-6 py-3 border-2 border-primary text-primary font-bold rounded-full pulse-glitch"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 240,
+      "child": 242
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 243,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 243,
+      "value": "Button()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 242,
+      "child": 243
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 244,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 244,
+      "key": "class",
+      "value": "font-label-mono text-primary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 239,
+      "child": 244
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 245,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 245,
+      "value": "Interactive State"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 244,
+      "child": 245
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 246,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 246,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 238,
+      "child": 246
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 247,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 247,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 246,
+      "child": 247
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 248,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 248,
+      "key": "class",
+      "value": "absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 247,
+      "child": 248
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 249,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 249,
+      "key": "class",
+      "value": "font-display-lg-mobile text-primary tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary animate-pulse"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 247,
+      "child": 249
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 250,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 250,
+      "value": "TEXT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 249,
+      "child": 250
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 251,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 251,
+      "key": "class",
+      "value": "font-label-mono text-secondary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 246,
+      "child": 251
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 252,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 252,
+      "value": "GradientText()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 251,
+      "child": 252
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 253,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 253,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 238,
+      "child": 253
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 254,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 254,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative group"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 253,
+      "child": 254
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 255,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 255,
+      "key": "class",
+      "value": "w-24 h-24 border-2 border-dashed border-tertiary/50 rounded-full animate-spin-slow flex items-center justify-center group-hover:border-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 255,
       "key": "style",
-      "value": "cursor: pointer;"
+      "value": "animation-duration: 10s;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 254,
+      "child": 255
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 256,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 9,
-      "key": "data-action",
-      "value": "scrollToShowcase"
+      "id": 256,
+      "key": "class",
+      "value": "material-symbols-outlined text-tertiary text-4xl"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 255,
+      "child": 256
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 257,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 257,
+      "value": "settings_input_component"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 256,
+      "child": 257
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 258,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 9,
+      "id": 258,
+      "key": "class",
+      "value": "font-label-mono text-tertiary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 253,
+      "child": 258
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 259,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 259,
+      "value": "Loader()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 258,
+      "child": 259
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 260,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 260,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 238,
+      "child": 260
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 261,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 261,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl glass-card flex flex-col gap-3 p-6 justify-center hover:scale-110 transition-all cursor-pointer group"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 260,
+      "child": 261
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 262,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 262,
+      "key": "class",
+      "value": "h-2 w-full bg-outline-variant/30 rounded"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 261,
+      "child": 262
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 263,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 263,
+      "key": "class",
+      "value": "h-2 w-2/3 bg-primary rounded shadow-[0_0_8px_rgba(207,188,255,0.4)]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 261,
+      "child": 263
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 264,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 264,
+      "key": "class",
+      "value": "h-2 w-1/2 bg-outline-variant/30 rounded"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 261,
+      "child": 264
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 265,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 265,
+      "key": "class",
+      "value": "font-label-mono text-primary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 260,
+      "child": 265
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 266,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 266,
+      "value": "ProgressBar()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 265,
+      "child": 266
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 267,
+      "tag": "section"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 267,
+      "key": "class",
+      "value": "py-24 reveal-section bg-transparent active"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 24,
+      "child": 267
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 268,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 268,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 267,
+      "child": 268
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 269,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 269,
+      "key": "class",
+      "value": "mb-12"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 268,
+      "child": 269
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 270,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 270,
+      "key": "class",
+      "value": "font-label-caps text-primary tracking-widest block mb-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 269,
+      "child": 270
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 271,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 271,
+      "value": "BLUEPRINT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 270,
+      "child": 271
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 272,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 272,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 269,
+      "child": 272
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 273,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 273,
+      "value": "The Engine Blueprint"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 272,
+      "child": 273
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 274,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 274,
+      "key": "class",
+      "value": "grid lg:grid-cols-2 gap-px bg-outline-variant/30 rounded-xl overflow-hidden shadow-2xl border border-outline-variant/50"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 268,
+      "child": 274
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 275,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 275,
+      "key": "class",
+      "value": "bg-[#0d1117] p-8 font-label-mono text-sm leading-relaxed overflow-x-auto min-h-[500px]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 274,
+      "child": 275
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 276,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 276,
+      "key": "class",
+      "value": "flex items-center gap-2 mb-6"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 275,
+      "child": 276
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 277,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 277,
+      "key": "class",
+      "value": "flex gap-1.5"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 276,
+      "child": 277
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 278,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 278,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#ff5f56]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 277,
+      "child": 278
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 279,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 279,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#ffbd2e]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 277,
+      "child": 279
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 280,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 280,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#27c93f]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 277,
+      "child": 280
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 281,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 281,
+      "key": "class",
+      "value": "text-on-surface-variant ml-4 text-xs"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 276,
+      "child": 281
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 282,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 282,
+      "value": "dashboard.tin"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 281,
+      "child": 282
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 283,
+      "tag": "code"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 283,
+      "key": "class",
+      "value": "text-[#c9d1d9]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 275,
+      "child": 283
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 284,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 284,
+      "key": "class",
+      "value": "text-[#ff7b72]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 284
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 285,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 285,
+      "value": "component"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 284,
+      "child": 285
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 286,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 286,
+      "key": "class",
+      "value": "text-[#d2a8ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 286
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 287,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 287,
+      "value": "Dashboard"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 286,
+      "child": 287
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 288,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 288,
+      "value": "():"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 288
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 289,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 289
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 290,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 290,
+      "value": "Container(align="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 290
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 291,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 291,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 291
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 292,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 292,
+      "value": "'center'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 291,
+      "child": 292
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 293,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 293,
+      "value": ", justify="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 293
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 294,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 294,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 294
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 295,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 295,
+      "value": "'center'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 294,
+      "child": 295
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 296,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 296,
+      "value": ", width="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 296
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 297,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 297,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 297
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 298,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 298,
+      "value": "'full'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 297,
+      "child": 298
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 299,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 299,
+      "value": ", padding="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 299
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 300,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 300,
+      "key": "class",
+      "value": "text-[#79c0ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 300
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 301,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 301,
+      "value": "30"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 300,
+      "child": 301
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 302,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 302,
+      "value": "):"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 302
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 303,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 303
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 304,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 304,
+      "value": "GradientText(text="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 304
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 305,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 305,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 305
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 306,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 306,
+      "value": "'Active Metrics'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 305,
+      "child": 306
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 307,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 307,
+      "value": ", animation="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 307
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 308,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 308,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 308
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 309,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 309,
+      "value": "'neon-pulse'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 308,
+      "child": 309
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 310,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 310,
+      "value": ")"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 310
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 311,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 311
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 312,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 312,
+      "value": "Card(title="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 312
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 313,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 313,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 313
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 314,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 314,
+      "value": "'Real-time FPS'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 313,
+      "child": 314
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 315,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 315,
+      "value": ", value="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 315
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 316,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 316,
+      "key": "class",
+      "value": "text-[#79c0ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 316
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 317,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 317,
+      "value": "120"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 316,
+      "child": 317
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 318,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 318,
+      "value": ", glow="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 318
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 319,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 319,
+      "key": "class",
+      "value": "text-[#ff7b72]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 319
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 320,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 320,
+      "value": "True"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 319,
+      "child": 320
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 321,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 321,
+      "value": "):"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 321
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 322,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 322
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 323,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 323,
+      "value": "Button(text="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 323
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 324,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 324,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 324
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 325,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 325,
+      "value": "'Interact'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 324,
+      "child": 325
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 326,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 326,
+      "value": ", onClick=trigger_action, color="
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 326
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 327,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 327,
+      "key": "class",
+      "value": "text-[#a5d6ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 327
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 328,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 328,
+      "value": "'neon-cyan'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 327,
+      "child": 328
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 329,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 329,
+      "value": ")"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 329
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 330,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 330
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 331,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 331
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 332,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 332,
+      "key": "class",
+      "value": "text-[#8b949e]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 332
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 333,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 333,
+      "value": "# .tin rendered execution on WebAssembly"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 332,
+      "child": 333
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 334,
+      "tag": "br"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 334
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 335,
+      "tag": "span"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 335,
+      "key": "class",
+      "value": "text-[#d2a8ff]"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 335
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 336,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 336,
+      "value": "mount"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 335,
+      "child": 336
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 337,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 337,
+      "value": "(Dashboard)"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 283,
+      "child": 337
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 338,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 338,
+      "key": "class",
+      "value": "relative bg-background/30 backdrop-blur-md flex items-center justify-center overflow-hidden"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 274,
+      "child": 338
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 339,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 339,
+      "key": "class",
+      "value": "absolute inset-0 opacity-20 pointer-events-none"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 339,
       "key": "style",
-      "value": "cursor: pointer;"
+      "value": "background-image: radial-gradient(circle at 2px 2px, #cfbcff 1px, transparent 0); background-size: 24px 24px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 338,
+      "child": 339
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 340,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 11,
-      "key": "data-action",
-      "value": "scrollToReviews"
+      "id": 340,
+      "key": "class",
+      "value": "relative z-10 glass-card p-10 neon-border-primary text-center"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 338,
+      "child": 340
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 341,
+      "tag": "h3"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 11,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 341,
+      "key": "class",
+      "value": "font-display-lg-mobile text-primary tracking-widest mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 340,
+      "child": 341
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 342,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 342,
+      "value": "NEON ACTIVE"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 341,
+      "child": 342
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 343,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 12,
-      "key": "data-action",
-      "value": "scrollToInstall"
+      "id": 343,
+      "key": "class",
+      "value": "flex flex-col gap-4"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 340,
+      "child": 343
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 344,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 12,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 344,
+      "key": "class",
+      "value": "h-1 w-full bg-primary-container rounded-full overflow-hidden"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 343,
+      "child": 344
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 345,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 13,
-      "key": "data-action",
-      "value": "openGithub"
+      "id": 345,
+      "key": "class",
+      "value": "h-full bg-primary w-2/3 shadow-[0_0_10px_rgba(207,188,255,1)] animate-pulse"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 344,
+      "child": 345
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 346,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 13,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 346,
+      "key": "class",
+      "value": "flex justify-between font-label-mono text-xs text-on-surface-variant"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 343,
+      "child": 346
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 347,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 24,
-      "key": "data-action",
-      "value": "scrollToInstall"
+      "id": 347,
+      "key": "class"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 346,
+      "child": 347
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 348,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 348,
+      "value": "THROUGHPUT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 347,
+      "child": 348
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 349,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 24,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 349,
+      "key": "class"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 346,
+      "child": 349
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 350,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 350,
+      "value": "8.4 GB/S"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 349,
+      "child": 350
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 351,
+      "tag": "a"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 25,
-      "key": "data-action",
-      "value": "scrollToShowcase"
+      "id": 351,
+      "key": "class",
+      "value": "mt-8 px-6 py-2 border border-primary/50 text-primary font-bold hover:bg-primary hover:text-on-primary transition-all inline-block"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 25,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 351,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 82,
-      "key": "data-action",
-      "value": "decrement"
+      "id": 351,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 340,
+      "child": 351
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 352,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 352,
+      "value": "INTERACT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 351,
+      "child": 352
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 353,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 82,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 353,
+      "key": "class",
+      "value": "absolute bottom-4 right-4 flex items-center gap-2 text-xs font-label-mono text-on-surface-variant/50"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 338,
+      "child": 353
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 354,
+      "tag": "span"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 83,
-      "key": "data-action",
-      "value": "increment"
+      "id": 354,
+      "key": "class",
+      "value": "w-2 h-2 rounded-full bg-green-500 animate-ping"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 353,
+      "child": 354
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 355,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 355,
+      "value": "LIVE PREVIEW"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 353,
+      "child": 355
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 356,
+      "tag": "section"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 83,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 356,
+      "key": "class",
+      "value": "py-32 relative reveal-section active"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 24,
+      "child": 356
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 357,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 139,
-      "key": "data-action",
-      "value": "submitReview"
+      "id": 357,
+      "key": "class",
+      "value": "max-w-4xl mx-auto px-margin-mobile text-center"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 356,
+      "child": 357
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 358,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 139,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 358,
+      "key": "class",
+      "value": "glass-card p-16 border-primary/20 relative overflow-hidden"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 357,
+      "child": 358
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 359,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "data-action",
-      "value": "openGithub"
+      "id": 359,
+      "key": "class",
+      "value": "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 358,
+      "child": 359
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 360,
+      "tag": "h2"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 161,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 360,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface mb-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 358,
+      "child": 360
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 361,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 361,
+      "value": "Ready to push the boundary?"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 360,
+      "child": 361
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 362,
+      "tag": "p"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 162,
-      "key": "data-action",
-      "value": "openNpm"
+      "id": 362,
+      "key": "class",
+      "value": "text-on-surface-variant mb-12 font-body-lg max-w-xl mx-auto"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 358,
+      "child": 362
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 363,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 363,
+      "value": "Join a community of developers rebuilding the web with pure Pythonic syntax and native performance."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 362,
+      "child": 363
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 364,
+      "tag": "div"
     },
     {
       "op": "SET_ATTRIBUTE",
-      "id": 162,
-      "key": "style",
-      "value": "cursor: pointer;"
+      "id": 364,
+      "key": "class",
+      "value": "flex flex-col sm:flex-row gap-6 justify-center"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 358,
+      "child": 364
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 365,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 365,
+      "key": "class",
+      "value": "bg-primary text-on-primary px-12 py-5 font-bold rounded-lg hover:scale-105 transition-transform text-lg shadow-[0_0_30px_rgba(207,188,255,0.3)] inline-block"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 365,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/discussions"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 365,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 364,
+      "child": 365
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 366,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 366,
+      "value": "Join the Beta"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 365,
+      "child": 366
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 367,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 367,
+      "key": "class",
+      "value": "glass-card text-on-surface border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg inline-block"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 367,
+      "key": "href",
+      "value": "#install"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 364,
+      "child": 367
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 368,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 368,
+      "value": "Install Now"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 367,
+      "child": 368
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 369,
+      "tag": "footer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 369,
+      "key": "class",
+      "value": "bg-surface-container-lowest/30 backdrop-blur-md py-12 border-t-2 border-tertiary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 369
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 370,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 370,
+      "key": "class",
+      "value": "flex flex-col md:flex-row justify-between items-center max-w-max-width mx-auto px-margin-desktop gap-8"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 369,
+      "child": 370
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 371,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 371,
+      "key": "class",
+      "value": "font-headline-md text-headline-md text-primary"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 370,
+      "child": 371
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 372,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 372,
+      "value": "TinPyUI"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 371,
+      "child": 372
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 373,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 373,
+      "key": "class",
+      "value": "flex gap-8 font-label-mono text-label-mono flex-wrap justify-center"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 370,
+      "child": 373
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 374,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 374,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 374,
+      "key": "href",
+      "value": "#install"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 373,
+      "child": 374
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 375,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 375,
+      "value": "Docs"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 374,
+      "child": 375
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 376,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 376,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 376,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 376,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 373,
+      "child": 376
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 377,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 377,
+      "value": "GitHub"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 376,
+      "child": 377
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 378,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 378,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 378,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/discussions"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 378,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 373,
+      "child": 378
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 379,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 379,
+      "value": "Community"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 378,
+      "child": 379
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 380,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 380,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 380,
+      "key": "href",
+      "value": "https://www.npmjs.com/package/tinpyui"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 380,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 373,
+      "child": 380
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 381,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 381,
+      "value": "npm"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 380,
+      "child": 381
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 382,
+      "tag": "a"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 382,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 382,
+      "key": "href",
+      "value": "https://pypi.org/project/tinpyui-ff/"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 382,
+      "key": "target",
+      "value": "_blank"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 373,
+      "child": 382
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 383,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 383,
+      "value": "PyPI"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 382,
+      "child": 383
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 384,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 384,
+      "key": "class",
+      "value": "font-label-mono text-label-mono text-outline text-right"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 370,
+      "child": 384
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 385,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 385,
+      "key": "class"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 384,
+      "child": 385
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 386,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 386,
+      "value": "© 2026 TinPyUI Framework."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 385,
+      "child": 386
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 387,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 387,
+      "key": "class",
+      "value": "text-[10px] opacity-50"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 384,
+      "child": 387
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 388,
+      "tag": "span"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 388,
+      "value": "Showcase Portal v1.0. Zero-DOM Edition."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 387,
+      "child": 388
     }
   ]
 }

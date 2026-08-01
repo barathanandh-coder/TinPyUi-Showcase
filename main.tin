@@ -1,0 +1,390 @@
+component Main():
+    div(class_="text-on-surface selection:bg-primary selection:text-on-primary", style="font-family: 'Outfit', sans-serif; font-size: 14px; overflow-y: auto; height: 100vh; scroll-behavior: smooth;"):
+        link(href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700&display=swap", rel="stylesheet")
+        div(class_="fixed inset-0 w-full h-full -z-50 overflow-hidden pointer-events-none", style="display:block;"):
+            canvas(height="4576", id="shader-canvas-ANIMATION_13", style="display:block;width:100%;height:100%", width="1280")
+        div(class_="cursor-trail", id="cursor", style="transform: translate(1264px, 3818px);")
+        nav(class_="fixed top-0 w-full z-50 bg-surface-container-lowest/30 backdrop-blur-xl border-b border-outline-variant/10"):
+            div(class_="flex justify-between items-center max-w-max-width mx-auto px-margin-desktop py-4"):
+                div(class_="font-bold text-primary tracking-tighter", style="font-size: 1.3rem; letter-spacing: -0.03em;"):
+                    Span(text="TinPyUI")
+                div(class_="hidden md:flex gap-8 items-center"):
+                    a(class_="font-body-md text-body-md text-primary border-b-2 border-primary pb-1", href="#hero"):
+                        Span(text="Showcase")
+                    a(class_="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors", href="#features"):
+                        Span(text="Features")
+                    a(class_="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors", href="#install"):
+                        Span(text="Docs")
+                    a(class_="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors", href="https://github.com/barathanandh-coder/TinUi/discussions", target="_blank"):
+                        Span(text="Community")
+                div(class_="flex items-center gap-4"):
+                    a(class_="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform", href="https://github.com/barathanandh-coder/TinUi/", target="_blank"):
+                        Span(text="terminal")
+                    a(class_="bg-primary text-on-primary px-6 py-2 font-body-md font-bold hover:scale-105 transition-transform active:scale-95 inline-block", href="https://github.com/barathanandh-coder/TinUi/discussions", target="_blank"):
+                        Span(text="Join the Beta")
+        main(class_="relative bg-transparent"):
+            section(class_="relative min-h-[90vh] flex items-center overflow-hidden bg-transparent", id="hero"):
+                div(class_="container mx-auto px-margin-desktop grid md:grid-cols-2 gap-12 items-center relative z-10"):
+                    div(class_="space-y-8"):
+                        h1(class_="text-on-surface leading-[1.05] tracking-tight", style="font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 700;"):
+                            Span(text="The Wasm")
+                            br()
+                            span(class_="text-primary italic"):
+                                Span(text="Showcase.")
+                        div(class_="h-12 overflow-hidden"):
+                            div(class_="transition-all duration-500 font-label-mono text-headline-md text-secondary", id="morph-subheadline"):
+                                Span(text="Experience the limit of the Zero-DOM engine.")
+                        p(class_="font-body-lg text-body-lg text-on-surface-variant max-w-lg"):
+                            Span(text="Build stunning, high-performance UIs with pure Pythonic syntax, compiled to WebAssembly and rendered via a Zero-DOM WebGL engine.")
+                        div(class_="flex gap-4"):
+                            a(class_="bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block", href="#features"):
+                                Span(text="Explore Features")
+                            a(class_="border border-primary text-primary px-8 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all inline-block", href="#install"):
+                                Span(text="Get Started")
+            section(class_="py-24 relative reveal-section px-margin-desktop max-w-max-width mx-auto bg-transparent active", id="features"):
+                div(class_="mb-16"):
+                    span(class_="font-label-caps text-primary tracking-widest block mb-4"):
+                        Span(text="CORE CAPABILITIES")
+                    h2(class_="font-display-lg text-display-lg-mobile text-on-surface"):
+                        Span(text="Why TinPyUI?")
+                    p(class_="font-body-lg text-on-surface-variant mt-4 max-w-2xl"):
+                        Span(text="A complete rethink of how UIs are built — Python-first, Wasm-powered, and DOM-free.")
+                div(class_="grid md:grid-cols-3 gap-8"):
+                    div(class_="glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-primary text-3xl"):
+                                Span(text="layers")
+                        h3(class_="font-headline-md text-headline-md text-primary"):
+                            Span(text="Zero-DOM Engine")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="Renders directly to a WebGL canvas, bypassing the DOM entirely for zero reflow and repaint overhead.")
+                    div(class_="glass-card neon-border-cyan p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-secondary text-3xl"):
+                                Span(text="speed")
+                        h3(class_="font-headline-md text-headline-md text-secondary"):
+                            Span(text="Wasm Performance")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="The compiled .tin kernel runs at near-native speed, achieving 120+ FPS on complex real-time scenes.")
+                    div(class_="glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-tertiary text-3xl"):
+                                Span(text="code")
+                        h3(class_="font-headline-md text-headline-md text-tertiary"):
+                            Span(text="Pythonic Syntax")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="Write declarative UI in pure Python. No HTML, no JSX — just clean, elegant .tin files.")
+                    div(class_="glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-primary text-3xl"):
+                                Span(text="bolt")
+                        h3(class_="font-headline-md text-headline-md text-primary"):
+                            Span(text="Hot Reload")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="Instant live preview on every save. The Wasm kernel reconciles UI state in microseconds.")
+                    div(class_="glass-card neon-border-cyan p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-secondary text-3xl"):
+                                Span(text="sync")
+                        h3(class_="font-headline-md text-headline-md text-secondary"):
+                            Span(text="Reactive State")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="First-class reactivity built into the runtime. No virtual DOM diffing or reconciliation needed.")
+                    div(class_="glass-card neon-border-primary p-8 group hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-5"):
+                        div(class_="w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center"):
+                            span(class_="material-symbols-outlined text-tertiary text-3xl"):
+                                Span(text="devices")
+                        h3(class_="font-headline-md text-headline-md text-tertiary"):
+                            Span(text="Cross-Platform")
+                        p(class_="font-body-md text-on-surface-variant"):
+                            Span(text="Deploy to web, desktop via Electron, and mobile — all from a single .tin codebase.")
+            section(class_="py-24 bg-surface-container-lowest/10 backdrop-blur-sm reveal-section active", id="install"):
+                div(class_="max-w-max-width mx-auto px-margin-desktop"):
+                    div(class_="text-center mb-16"):
+                        span(class_="font-label-caps text-tertiary tracking-widest block mb-4"):
+                            Span(text="QUICK START")
+                        h2(class_="font-display-lg text-display-lg-mobile text-on-surface"):
+                            Span(text="Installation Guide")
+                        p(class_="text-on-surface-variant mt-4 font-body-lg max-w-xl mx-auto"):
+                            Span(text="Get TinPyUI running in seconds. Choose your preferred package manager.")
+                    div(class_="grid md:grid-cols-2 gap-8 mb-8"):
+                        div(class_="glass-card p-8 border-tertiary/30"):
+                            div(class_="flex items-center gap-3 mb-6"):
+                                span(class_="material-symbols-outlined text-tertiary text-2xl"):
+                                    Span(text="terminal")
+                                h3(class_="font-headline-md text-tertiary"):
+                                    Span(text="Python / pip")
+                            div(class_="bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm mb-6"):
+                                span(class_="text-[#8b949e]"):
+                                    Span(text="# Install via pip")
+                                br()
+                                span(class_="text-[#27c93f]"):
+                                    Span(text="$ ")
+                                span(class_="text-[#c9d1d9]"):
+                                    Span(text="pip install tinpyui-ff")
+                            a(class_="inline-flex items-center gap-2 text-tertiary font-bold hover:gap-4 transition-all font-body-md", href="https://pypi.org/project/tinpyui-ff/", target="_blank"):
+                                Span(text="View on PyPI ")
+                                span(class_="material-symbols-outlined text-base"):
+                                    Span(text="arrow_forward")
+                        div(class_="glass-card p-8 border-secondary/30"):
+                            div(class_="flex items-center gap-3 mb-6"):
+                                span(class_="material-symbols-outlined text-secondary text-2xl"):
+                                    Span(text="package_2")
+                                h3(class_="font-headline-md text-secondary"):
+                                    Span(text="JavaScript / npm")
+                            div(class_="bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm mb-6"):
+                                span(class_="text-[#8b949e]"):
+                                    Span(text="# Install via npm")
+                                br()
+                                span(class_="text-[#27c93f]"):
+                                    Span(text="$ ")
+                                span(class_="text-[#c9d1d9]"):
+                                    Span(text="npm install tinpyui")
+                            a(class_="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all font-body-md", href="https://www.npmjs.com/package/tinpyui", target="_blank"):
+                                Span(text="View on npm ")
+                                span(class_="material-symbols-outlined text-base"):
+                                    Span(text="arrow_forward")
+                    div(class_="glass-card p-8 border-primary/30"):
+                        div(class_="flex items-center gap-3 mb-6"):
+                            span(class_="material-symbols-outlined text-primary text-2xl"):
+                                Span(text="rocket_launch")
+                            h3(class_="font-headline-md text-primary"):
+                                Span(text="Quick Start — Hello World")
+                        div(class_="bg-[#0d1117] rounded-xl p-6 font-label-mono text-sm leading-relaxed"):
+                            span(class_="text-[#8b949e]"):
+                                Span(text="# Create your first component in .tin syntax")
+                            br()
+                            span(class_="text-[#ff7b72]"):
+                                Span(text="component ")
+                            span(class_="text-[#d2a8ff]"):
+                                Span(text="HelloWorld")
+                            Span(text="():")
+                            br()
+                            Span(text="    ")
+                            span(class_="text-[#d2a8ff]"):
+                                Span(text="Container")
+                            Span(text="(padding=")
+                            span(class_="text-[#79c0ff]"):
+                                Span(text="20")
+                            Span(text="):")
+                            br()
+                            Span(text="        ")
+                            span(class_="text-[#d2a8ff]"):
+                                Span(text="GradientText")
+                            Span(text="(text=")
+                            span(class_="text-[#a5d6ff]"):
+                                Span(text="'Hello, TinPyUI!'")
+                            Span(text=")")
+                            br()
+                            Span(text="        ")
+                            span(class_="text-[#d2a8ff]"):
+                                Span(text="Button")
+                            Span(text="(text=")
+                            span(class_="text-[#a5d6ff]"):
+                                Span(text="'Click Me'")
+                            Span(text=", color=")
+                            span(class_="text-[#a5d6ff]"):
+                                Span(text="'neon-cyan'")
+                            Span(text=")")
+                            br()
+                            br()
+                            span(class_="text-[#d2a8ff]"):
+                                Span(text="mount")
+                            Span(text="(HelloWorld)")
+            section(class_="py-24 bg-surface-container-lowest/10 backdrop-blur-sm reveal-section active"):
+                div(class_="max-w-max-width mx-auto px-margin-desktop"):
+                    div(class_="text-center mb-16"):
+                        span(class_="font-label-caps text-secondary tracking-widest block mb-4"):
+                            Span(text="RAW BENCHMARKS")
+                        h2(class_="font-display-lg text-display-lg-mobile text-on-surface"):
+                            Span(text="Performance Lab")
+                    div(class_="grid md:grid-cols-2 gap-12"):
+                        div(class_="glass-card p-10 border-error/30 relative"):
+                            div(class_="absolute top-4 right-6 font-label-mono text-error text-xs"):
+                                Span(text="STATUS: BOTTLENECKED")
+                            h4(class_="font-headline-md text-error mb-8"):
+                                Span(text="Legacy DOM")
+                            div(class_="space-y-8"):
+                                div(class_="flex items-end gap-4"):
+                                    span(class_="font-display-lg text-[80px] text-error leading-none", id="legacy-fps"):
+                                        Span(text="14")
+                                    span(class_="font-label-mono text-on-surface-variant pb-2"):
+                                        Span(text="FPS")
+                                div(class_="h-2 w-full bg-error/10 rounded-full"):
+                                    div(class_="h-full bg-error w-[15%]")
+                                p(class_="text-on-surface-variant text-sm font-body-md"):
+                                    Span(text="Reflow/Repaint overhead stalling main thread during complex animation cycles.")
+                        div(class_="glass-card p-10 border-primary/30 relative"):
+                            div(class_="absolute top-4 right-6 font-label-mono text-primary text-xs flex items-center gap-2"):
+                                span(class_="w-2 h-2 rounded-full bg-primary animate-ping")
+                                Span(text="STABLE")
+                            h4(class_="font-headline-md text-primary mb-8"):
+                                Span(text="TinPyUI Wasm")
+                            div(class_="space-y-8"):
+                                div(class_="flex items-end gap-4"):
+                                    span(class_="font-display-lg text-[80px] text-primary leading-none", id="wasm-fps"):
+                                        Span(text="120")
+                                    span(class_="font-label-mono text-on-surface-variant pb-2"):
+                                        Span(text="FPS")
+                                div(class_="h-2 w-full bg-primary/10 rounded-full"):
+                                    div(class_="h-full bg-primary w-full shadow-[0_0_15px_rgba(207,188,255,0.5)]")
+                                p(class_="text-on-surface-variant text-sm font-body-md"):
+                                    Span(text="Direct GPU pipeline via WebAssembly. Zero DOM interaction, 100% efficient vector pushing.")
+            section(class_="py-24 bg-transparent reveal-section active"):
+                div(class_="max-w-max-width mx-auto px-margin-desktop text-center mb-16"):
+                    h2(class_="font-display-lg text-display-lg-mobile text-on-surface"):
+                        Span(text="The Component Lab")
+                    p(class_="text-on-surface-variant mt-4 font-body-lg"):
+                        Span(text="Interactive primitives pulsing with reactive neural signals.")
+                div(class_="flex flex-wrap justify-center gap-12 items-center"):
+                    div(class_="group flex flex-col items-center gap-4"):
+                        div(class_="w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden group"):
+                            div(class_="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity")
+                            div(class_="px-6 py-3 border-2 border-primary text-primary font-bold rounded-full pulse-glitch"):
+                                Span(text="Button()")
+                        span(class_="font-label-mono text-primary"):
+                            Span(text="Interactive State")
+                    div(class_="group flex flex-col items-center gap-4"):
+                        div(class_="w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative"):
+                            div(class_="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity")
+                            div(class_="font-display-lg-mobile text-primary tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary animate-pulse"):
+                                Span(text="TEXT")
+                        span(class_="font-label-mono text-secondary"):
+                            Span(text="GradientText()")
+                    div(class_="group flex flex-col items-center gap-4"):
+                        div(class_="w-40 h-40 rounded-xl glass-card flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative group"):
+                            div(class_="w-24 h-24 border-2 border-dashed border-tertiary/50 rounded-full animate-spin-slow flex items-center justify-center group-hover:border-tertiary transition-colors", style="animation-duration: 10s;"):
+                                span(class_="material-symbols-outlined text-tertiary text-4xl"):
+                                    Span(text="settings_input_component")
+                        span(class_="font-label-mono text-tertiary"):
+                            Span(text="Loader()")
+                    div(class_="group flex flex-col items-center gap-4"):
+                        div(class_="w-40 h-40 rounded-xl glass-card flex flex-col gap-3 p-6 justify-center hover:scale-110 transition-all cursor-pointer group"):
+                            div(class_="h-2 w-full bg-outline-variant/30 rounded")
+                            div(class_="h-2 w-2/3 bg-primary rounded shadow-[0_0_8px_rgba(207,188,255,0.4)]")
+                            div(class_="h-2 w-1/2 bg-outline-variant/30 rounded")
+                        span(class_="font-label-mono text-primary"):
+                            Span(text="ProgressBar()")
+            section(class_="py-24 reveal-section bg-transparent active"):
+                div(class_="max-w-max-width mx-auto px-margin-desktop"):
+                    div(class_="mb-12"):
+                        span(class_="font-label-caps text-primary tracking-widest block mb-4"):
+                            Span(text="BLUEPRINT")
+                        h2(class_="font-display-lg text-display-lg-mobile text-on-surface"):
+                            Span(text="The Engine Blueprint")
+                    div(class_="grid lg:grid-cols-2 gap-px bg-outline-variant/30 rounded-xl overflow-hidden shadow-2xl border border-outline-variant/50"):
+                        div(class_="bg-[#0d1117] p-8 font-label-mono text-sm leading-relaxed overflow-x-auto min-h-[500px]"):
+                            div(class_="flex items-center gap-2 mb-6"):
+                                div(class_="flex gap-1.5"):
+                                    div(class_="w-3 h-3 rounded-full bg-[#ff5f56]")
+                                    div(class_="w-3 h-3 rounded-full bg-[#ffbd2e]")
+                                    div(class_="w-3 h-3 rounded-full bg-[#27c93f]")
+                                span(class_="text-on-surface-variant ml-4 text-xs"):
+                                    Span(text="dashboard.tin")
+                            code(class_="text-[#c9d1d9]"):
+                                span(class_="text-[#ff7b72]"):
+                                    Span(text="component")
+                                span(class_="text-[#d2a8ff]"):
+                                    Span(text="Dashboard")
+                                Span(text="():")
+                                br()
+                                Span(text="Container(align=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'center'")
+                                Span(text=", justify=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'center'")
+                                Span(text=", width=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'full'")
+                                Span(text=", padding=")
+                                span(class_="text-[#79c0ff]"):
+                                    Span(text="30")
+                                Span(text="):")
+                                br()
+                                Span(text="GradientText(text=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'Active Metrics'")
+                                Span(text=", animation=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'neon-pulse'")
+                                Span(text=")")
+                                br()
+                                Span(text="Card(title=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'Real-time FPS'")
+                                Span(text=", value=")
+                                span(class_="text-[#79c0ff]"):
+                                    Span(text="120")
+                                Span(text=", glow=")
+                                span(class_="text-[#ff7b72]"):
+                                    Span(text="True")
+                                Span(text="):")
+                                br()
+                                Span(text="Button(text=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'Interact'")
+                                Span(text=", onClick=trigger_action, color=")
+                                span(class_="text-[#a5d6ff]"):
+                                    Span(text="'neon-cyan'")
+                                Span(text=")")
+                                br()
+                                br()
+                                span(class_="text-[#8b949e]"):
+                                    Span(text="# .tin rendered execution on WebAssembly")
+                                br()
+                                span(class_="text-[#d2a8ff]"):
+                                    Span(text="mount")
+                                Span(text="(Dashboard)")
+                        div(class_="relative bg-background/30 backdrop-blur-md flex items-center justify-center overflow-hidden"):
+                            div(class_="absolute inset-0 opacity-20 pointer-events-none", style="background-image: radial-gradient(circle at 2px 2px, #cfbcff 1px, transparent 0); background-size: 24px 24px;")
+                            div(class_="relative z-10 glass-card p-10 neon-border-primary text-center"):
+                                h3(class_="font-display-lg-mobile text-primary tracking-widest mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary"):
+                                    Span(text="NEON ACTIVE")
+                                div(class_="flex flex-col gap-4"):
+                                    div(class_="h-1 w-full bg-primary-container rounded-full overflow-hidden"):
+                                        div(class_="h-full bg-primary w-2/3 shadow-[0_0_10px_rgba(207,188,255,1)] animate-pulse")
+                                    div(class_="flex justify-between font-label-mono text-xs text-on-surface-variant"):
+                                        span(class_=""):
+                                            Span(text="THROUGHPUT")
+                                        span(class_=""):
+                                            Span(text="8.4 GB/S")
+                                a(class_="mt-8 px-6 py-2 border border-primary/50 text-primary font-bold hover:bg-primary hover:text-on-primary transition-all inline-block", href="https://github.com/barathanandh-coder/TinUi/", target="_blank"):
+                                    Span(text="INTERACT")
+                            div(class_="absolute bottom-4 right-4 flex items-center gap-2 text-xs font-label-mono text-on-surface-variant/50"):
+                                span(class_="w-2 h-2 rounded-full bg-green-500 animate-ping")
+                                Span(text="LIVE PREVIEW")
+            section(class_="py-32 relative reveal-section active"):
+                div(class_="max-w-4xl mx-auto px-margin-mobile text-center"):
+                    div(class_="glass-card p-16 border-primary/20 relative overflow-hidden"):
+                        div(class_="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent")
+                        h2(class_="font-display-lg text-display-lg-mobile text-on-surface mb-8"):
+                            Span(text="Ready to push the boundary?")
+                        p(class_="text-on-surface-variant mb-12 font-body-lg max-w-xl mx-auto"):
+                            Span(text="Join a community of developers rebuilding the web with pure Pythonic syntax and native performance.")
+                        div(class_="flex flex-col sm:flex-row gap-6 justify-center"):
+                            a(class_="bg-primary text-on-primary px-12 py-5 font-bold rounded-lg hover:scale-105 transition-transform text-lg shadow-[0_0_30px_rgba(207,188,255,0.3)] inline-block", href="https://github.com/barathanandh-coder/TinUi/discussions", target="_blank"):
+                                Span(text="Join the Beta")
+                            a(class_="glass-card text-on-surface border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg inline-block", href="#install"):
+                                Span(text="Install Now")
+        footer(class_="bg-surface-container-lowest/30 backdrop-blur-md py-12 border-t-2 border-tertiary"):
+            div(class_="flex flex-col md:flex-row justify-between items-center max-w-max-width mx-auto px-margin-desktop gap-8"):
+                div(class_="font-headline-md text-headline-md text-primary"):
+                    Span(text="TinPyUI")
+                div(class_="flex gap-8 font-label-mono text-label-mono flex-wrap justify-center"):
+                    a(class_="text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform", href="#install"):
+                        Span(text="Docs")
+                    a(class_="text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform", href="https://github.com/barathanandh-coder/TinUi/", target="_blank"):
+                        Span(text="GitHub")
+                    a(class_="text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform", href="https://github.com/barathanandh-coder/TinUi/discussions", target="_blank"):
+                        Span(text="Community")
+                    a(class_="text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform", href="https://www.npmjs.com/package/tinpyui", target="_blank"):
+                        Span(text="npm")
+                    a(class_="text-outline hover:text-tertiary transition-colors hover:translate-x-1 transition-transform", href="https://pypi.org/project/tinpyui-ff/", target="_blank"):
+                        Span(text="PyPI")
+                div(class_="font-label-mono text-label-mono text-outline text-right"):
+                    p(class_=""):
+                        Span(text="© 2026 TinPyUI Framework.")
+                    p(class_="text-[10px] opacity-50"):
+                        Span(text="Showcase Portal v1.0. Zero-DOM Edition.")
+
