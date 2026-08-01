@@ -11,22 +11,44 @@
         WebAssembly.instantiateStreaming(fetch("app.wasm"), go.importObject)
             .then(result => {
                 go.run(result.instance);
-                fetch("app.ir.json")
-                    .then(res => res.text())
-                    .then(ir => {
-                        const ret = BootTinUI(ir);
-                        if (ret) console.log(ret);
-                    })
-                    .catch(err => {
-                        console.error("Failed to load app.ir.json:", err);
-                        document.getElementById("tinui-root").innerHTML =
-                            "<div style='padding:20px;color:#ff5555;'>Failed to load app.ir.json: " + err.message + "</div>";
-                    });
+
+                const boot = () => {
+                    fetch("app.ir.json")
+                        .then(res => res.text())
+                        .then(ir => {
+                            try {
+                                const ret = BootTinUI(ir);
+                                if (ret) console.log(ret);
+                            } catch (e) {
+                                console.error("TinUI Boot Error:", e);
+                                document.getElementById("tinui-root").innerHTML =
+                                    "<div style='padding:20px;color:#ff5555;'>TinUI Error: " + e.message + "</div>";
+                            }
+                        })
+                        .catch(err => {
+                            console.error("Failed to load app.ir.json:", err);
+                            document.getElementById("tinui-root").innerHTML =
+                                "<div style='padding:20px;color:#ff5555;'>Failed to load app.ir.json: " + err.message + "</div>";
+                        });
+                };
+
+                if (document.readyState === "loading") {
+                    document.addEventListener("DOMContentLoaded", boot);
+                } else {
+                    boot();
+                }
             })
             .catch(err => {
                 console.error("WASM Boot Error:", err);
-                document.getElementById("tinui-root").innerHTML =
-                    "<div style='padding:20px;color:#ff5555;'>Failed to start WebAssembly engine: " + err.message + "</div>";
+                const showErr = () => {
+                    document.getElementById("tinui-root").innerHTML =
+                        "<div style='padding:20px;color:#ff5555;'>Failed to start WebAssembly engine: " + err.message + "</div>";
+                };
+                if (document.readyState === "loading") {
+                    document.addEventListener("DOMContentLoaded", showErr);
+                } else {
+                    showErr();
+                }
             });
     </script>
 </head>
