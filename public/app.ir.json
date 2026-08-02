@@ -677,7 +677,7 @@
       "op": "SET_ATTRIBUTE",
       "id": 27,
       "key": "class",
-      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+      "value": "font-display-lg text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300 drop-shadow-[0_0_10px_rgba(207,188,255,0.5)]"
     },
     {
       "op": "SET_TEXT",
@@ -1314,7 +1314,7 @@
       "op": "SET_ATTRIBUTE",
       "id": 54,
       "key": "class",
-      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+      "value": "font-display-lg text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-tertiary drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]"
     },
     {
       "op": "SET_TEXT",
@@ -1863,7 +1863,7 @@
       "op": "SET_ATTRIBUTE",
       "id": 80,
       "key": "class",
-      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+      "value": "font-display-lg text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-primary drop-shadow-[0_0_10px_rgba(231,195,101,0.5)]"
     },
     {
       "op": "SET_TEXT",
@@ -2319,7 +2319,7 @@
       "op": "SET_ATTRIBUTE",
       "id": 100,
       "key": "class",
-      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+      "value": "font-display-lg text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary to-white drop-shadow-[0_0_10px_rgba(207,188,255,0.5)]"
     },
     {
       "op": "SET_TEXT",
@@ -2812,7 +2812,7 @@
       "op": "SET_ATTRIBUTE",
       "id": 123,
       "key": "class",
-      "value": "font-display-lg text-display-lg-mobile text-on-surface mb-8 relative z-10"
+      "value": "font-display-lg text-display-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-300 to-tertiary drop-shadow-[0_0_15px_rgba(207,188,255,0.6)] mb-8 relative z-10"
     },
     {
       "op": "SET_TEXT",
