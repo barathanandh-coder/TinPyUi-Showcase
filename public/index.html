@@ -51,24 +51,15 @@
         .pulse-glitch { animation: pulse-glitch 2s infinite; }
         @keyframes pulse-glitch { 0%, 100% { opacity: 1; filter: hue-rotate(0deg); } 50% { opacity: 0.8; filter: hue-rotate(90deg) brightness(1.2); } }
     </style>
-    <script src="tin-runtime.js"></script>
     <script src="wasm_exec.js"></script>
-    <script>
-        const go = new Go();
-        WebAssembly.instantiateStreaming(fetch('tinui_engine.wasm'), go.importObject).then(result => {
-            go.run(result.instance);
-            fetch('app.ir.json').then(r => r.text()).then(json => {
-                if (typeof BootTinUI === 'function') BootTinUI(json);
-            });
-        });
-    </script>
+    <script src="tin-runtime.js"></script>
 </head>
 <body>
     <div id="tinui-root">
-        <div id="tin-node-1" data-hero-background="black-hole" primaryColor="neon-cyan" secondaryColor="neon-purple" speed="1" data-bg-fixed="true" data-shader-effect="black-hole" data-shader-primary="neon-cyan" data-shader-secondary="neon-purple" style="position: relative; width: 100%; min-height: 100vh; box-sizing: border-box; z-index: 0; background: radial-gradient(circle at top right, #00f2fe22, #0a0b10);">
+        <div id="tin-node-1" data-bg-fixed="true" data-shader-primary="neon-cyan" data-shader-secondary="neon-purple" primaryColor="neon-cyan" secondaryColor="neon-purple" speed="1" data-hero-background="black-hole" data-shader-effect="black-hole" style="position: relative; width: 100%; min-height: 100vh; box-sizing: border-box; z-index: 0; background: radial-gradient(circle at top right, #00f2fe22, #0a0b10);">
             <nav id="tin-node-2" class="w-full fixed top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant flex" style="display: flex; position: sticky; top: 0; width: 100%; z-index: 100; box-sizing: border-box;">
                 <div id="tin-node-3" class="max-w-max-width mx-auto px-margin-desktop py-4 flex-1" style="display: flex; flex-direction: row; box-sizing: border-box; align-items: center; justify-content: space-between; width: 100%;">
-                    <a id="tin-node-4" href="#" class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary tracking-tighter flex items-center gap-2">
+                    <a id="tin-node-4" class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary tracking-tighter flex items-center gap-2" href="#">
                         <p id="tin-node-5">
                             TinPyUI
                         </p>
@@ -86,7 +77,7 @@
                         <button id="tin-node-10" class="font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors" onClick="window.open('https://github.com/barathanandh-coder/TinUi', '_blank')" style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;">
                             Docs
                         </button>
-                        <button id="tin-node-11" onClick="window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')" class="font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors" style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;">
+                        <button id="tin-node-11" class="font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors" onClick="window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')" style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;">
                             Community
                         </button>
                     </div>
@@ -110,7 +101,7 @@ Showcase.
                             Dive into the vanguard of web graphics. These experiments are rendered directly to WebGL via our specialized WebAssembly kernel, achieving performance previously impossible in a browser.
                         </p>
                         <div id="tin-node-20" style="display: flex; flex-direction: row; box-sizing: border-box; gap: 16px;">
-                            <a id="tin-node-21" class="bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block cursor-pointer" href="#features" onClick="window.location.href='#features'">
+                            <a id="tin-node-21" href="#features" onClick="window.location.href='#features'" class="bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block cursor-pointer">
                                 Explore Features
                             </a>
                             <a id="tin-node-22" class="border border-primary text-primary px-8 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all inline-block cursor-pointer" href="https://www.npmjs.com/package/tinpyui?activeTab=versions">
@@ -122,7 +113,7 @@ Showcase.
                     </div>
                 </div>
             </section>
-            <section id="tin-node-24" id="features" class="py-24 relative px-margin-desktop max-w-max-width mx-auto bg-transparent" data-scroll-reveal="true" style="display: flex; flex-direction: column; box-sizing: border-box;">
+            <section id="tin-node-24" class="py-24 relative px-margin-desktop max-w-max-width mx-auto bg-transparent" data-scroll-reveal="true" id="features" style="display: flex; flex-direction: column; box-sizing: border-box;">
                 <div id="tin-node-25" class="mb-16" style="display: flex; flex-direction: column; box-sizing: border-box;">
                     <p id="tin-node-26" class="font-label-caps text-primary tracking-widest block mb-4">
                         FRAMEWORK CORE
@@ -185,7 +176,7 @@ Showcase.
                     </div>
                 </div>
             </section>
-            <section id="tin-node-50" data-scroll-reveal="true" class="py-24 bg-surface-container-lowest/10 backdrop-blur-sm" style="display: flex; flex-direction: column; box-sizing: border-box;">
+            <section id="tin-node-50" class="py-24 bg-surface-container-lowest/10 backdrop-blur-sm" data-scroll-reveal="true" style="display: flex; flex-direction: column; box-sizing: border-box;">
                 <div id="tin-node-51" class="max-w-max-width mx-auto px-margin-desktop" style="display: flex; flex-direction: column; box-sizing: border-box;">
                     <div id="tin-node-52" class="text-center mb-16" style="display: flex; flex-direction: column; box-sizing: border-box;">
                         <p id="tin-node-53" class="font-label-caps text-secondary tracking-widest block mb-4">
@@ -360,7 +351,7 @@ mount(Dashboard)
                     </div>
                 </div>
             </section>
-            <section id="tin-node-120" data-scroll-reveal="true" class="py-32 relative" style="display: flex; flex-direction: column; box-sizing: border-box;">
+            <section id="tin-node-120" class="py-32 relative" data-scroll-reveal="true" style="display: flex; flex-direction: column; box-sizing: border-box;">
                 <div id="tin-node-121" class="max-w-4xl mx-auto px-margin-mobile text-center" style="display: flex; flex-direction: column; box-sizing: border-box;">
                     <div id="tin-node-122" class="bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-primary/20 p-16 relative overflow-hidden" style="display: flex; flex-direction: column; box-sizing: border-box;">
                         <h2 id="tin-node-123" class="font-display-lg text-display-lg-mobile text-on-surface mb-8 relative z-10">
@@ -370,7 +361,7 @@ mount(Dashboard)
                             Join a community of developers rebuilding the web with pure Pythonic syntax and native performance.
                         </p>
                         <div id="tin-node-125" class="relative z-10 flex-col sm:flex-row" style="display: flex; flex-direction: row; box-sizing: border-box; gap: 24px; justify-content: center;">
-                            <button id="tin-node-126" class="bg-[rgba(20,18,24,0.2)] text-on-surface border border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg" onClick="window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')" style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;">
+                            <button id="tin-node-126" onClick="window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')" class="bg-[rgba(20,18,24,0.2)] text-on-surface border border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg" style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;">
                                 Submit Your Experiment
                             </button>
                         </div>
