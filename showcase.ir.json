@@ -1,0 +1,3079 @@
+{
+  "mutations": {},
+  "nodes": [
+    {
+      "op": "CREATE_NODE",
+      "id": 1,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 1,
+      "key": "data-hero-background",
+      "value": "black-hole"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 1,
+      "key": "primaryColor",
+      "value": "neon-cyan"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 1,
+      "key": "secondaryColor",
+      "value": "neon-purple"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 1,
+      "key": "speed",
+      "value": "1"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 1,
+      "key": "style",
+      "value": "position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow-y: auto; box-sizing: border-box; background: radial-gradient(circle at top right, rgba(155,81,224,0.15), #0a0b10);"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "child": 1
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 2,
+      "tag": "nav"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 2,
+      "key": "class",
+      "value": "w-full fixed top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant flex"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 2,
+      "key": "style",
+      "value": "display: flex; position: sticky; top: 0; width: 100%; z-index: 100; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 2
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 3,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 3,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop py-4 flex-1"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 3,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; justify-content: space-between; width: 100%;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 2,
+      "child": 3
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 4,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 4,
+      "key": "class",
+      "value": "font-display-lg-mobile text-display-lg-mobile font-bold text-primary tracking-tighter flex items-center gap-2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 4,
+      "key": "href",
+      "value": "#"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 3,
+      "child": 4
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 5,
+      "tag": "p"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 5,
+      "value": "TinPyUI"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 4,
+      "child": 5
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 6,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 6,
+      "key": "class",
+      "value": "text-on-surface-variant font-normal"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 6,
+      "value": "Showcase"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 4,
+      "child": 6
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 7,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 7,
+      "key": "class",
+      "value": "hidden md:flex items-center"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 7,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 32px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 3,
+      "child": 7
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 8,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 8,
+      "key": "class",
+      "value": "font-body-md text-primary border-b-2 border-primary pb-1"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 8,
+      "value": "Showcase"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 7,
+      "child": 8
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 9,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 9,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 9,
+      "value": "Features"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 7,
+      "child": 9
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 10,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 10,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 10,
+      "value": "Docs"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 7,
+      "child": 10
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 11,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 11,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 11,
+      "value": "Community"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 7,
+      "child": 11
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 12,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 12,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 16px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 3,
+      "child": 12
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 13,
+      "tag": "Icon"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 13,
+      "key": "class",
+      "value": "text-primary cursor-pointer hover:scale-110 transition-transform"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 13,
+      "key": "name",
+      "value": "terminal"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 12,
+      "child": 13
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 14,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 14,
+      "key": "class",
+      "value": "bg-primary text-on-primary px-6 py-2 font-body-md font-bold rounded hover:scale-105 active:scale-95"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 14,
+      "value": "Join the Beta"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 14,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 12,
+      "child": 14
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 15,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 15,
+      "key": "class",
+      "value": "relative min-h-[90vh] flex items-center overflow-hidden bg-transparent"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 15,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 15
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 16,
+      "tag": "Grid"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 16,
+      "key": "class",
+      "value": "container mx-auto px-margin-desktop items-center relative z-10"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 16,
+      "key": "cols",
+      "value": "2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 16,
+      "key": "style",
+      "value": "gap: 48px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 15,
+      "child": 16
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 17,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 17,
+      "key": "class",
+      "value": "space-y-8"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 17,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 16,
+      "child": 17
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 18,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 18,
+      "key": "class",
+      "value": "font-display-lg text-display-lg text-on-surface leading-[1.05] tracking-tight whitespace-pre-line"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 18,
+      "value": "The Tin \nShowcase."
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 18,
+      "key": "style",
+      "value": "font-size: 3.5rem; font-weight: 800; margin: 0;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 17,
+      "child": 18
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 19,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 19,
+      "key": "class",
+      "value": "font-label-mono text-headline-md text-secondary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 19,
+      "value": "Experience the limit of the Zero-DOM engine."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 17,
+      "child": 19
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 20,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 20,
+      "key": "class",
+      "value": "font-body-lg text-on-surface-variant max-w-lg"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 20,
+      "value": "Dive into the vanguard of web graphics. These experiments are rendered directly to WebGL via our specialized WebAssembly kernel, achieving performance previously impossible in a browser."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 17,
+      "child": 20
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 21,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 21,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 16px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 17,
+      "child": 21
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 22,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 22,
+      "key": "class",
+      "value": "bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block cursor-pointer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 22,
+      "key": "href",
+      "value": "#features"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 22,
+      "value": "Explore Features"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 22,
+      "key": "onClick",
+      "value": "window.location.href='#features'"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 21,
+      "child": 22
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 23,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 23,
+      "key": "class",
+      "value": "border border-primary text-primary px-8 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all inline-block cursor-pointer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 23,
+      "key": "href",
+      "value": "https://www.npmjs.com/package/tinpyui?activeTab=versions"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 23,
+      "value": "Get Started"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 21,
+      "child": 23
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 24,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 24,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 16,
+      "child": 24
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 25,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 25,
+      "key": "class",
+      "value": "py-24 relative px-margin-desktop max-w-max-width mx-auto bg-transparent"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 25,
+      "key": "data-scroll-reveal",
+      "value": "true"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 25,
+      "key": "id",
+      "value": "features"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 25,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 25
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 26,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 26,
+      "key": "class",
+      "value": "mb-16"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 26,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 25,
+      "child": 26
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 27,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 27,
+      "key": "class",
+      "value": "font-label-caps text-primary tracking-widest block mb-4"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 27,
+      "value": "FRAMEWORK CORE"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 26,
+      "child": 27
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 28,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 28,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 28,
+      "value": "TinPyUI Features"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 26,
+      "child": 28
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 29,
+      "tag": "Grid"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 29,
+      "key": "cols",
+      "value": "3"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 29,
+      "key": "style",
+      "value": "gap: 32px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 25,
+      "child": 29
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 30,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 30,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 30,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 29,
+      "child": 30
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 31,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 31,
+      "key": "class",
+      "value": "h-48 relative overflow-hidden bg-surface-container-high"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 31,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 30,
+      "child": 31
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 32,
+      "tag": "ShaderLayer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 32,
+      "key": "data-hero-background",
+      "value": "cyber-grid"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 31,
+      "child": 32
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 33,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 33,
+      "key": "class",
+      "value": "p-8 flex-1 flex flex-col"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 33,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 30,
+      "child": 33
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 34,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 34,
+      "key": "class",
+      "value": "font-headline-md text-on-surface mb-2"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 34,
+      "value": "Zero-DOM Architecture"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 33,
+      "child": 34
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 35,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 35,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant mb-8 flex-1"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 35,
+      "value": "Bypasses the traditional Document Object Model bottleneck. User interfaces are compiled to raw instructions and painted natively at hardware speeds."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 33,
+      "child": 35
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 36,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 36,
+      "key": "class",
+      "value": "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 36,
+      "value": "Learn More"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 36,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 33,
+      "child": 36
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 37,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 37,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 37,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 29,
+      "child": 37
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 38,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 38,
+      "key": "class",
+      "value": "h-48 relative overflow-hidden bg-surface-container-high"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 38,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 37,
+      "child": 38
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 39,
+      "tag": "ShaderLayer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 39,
+      "key": "data-hero-background",
+      "value": "fluid-sim"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 38,
+      "child": 39
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 40,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 40,
+      "key": "class",
+      "value": "p-8 flex-1 flex flex-col"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 40,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 37,
+      "child": 40
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 41,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 41,
+      "key": "class",
+      "value": "font-headline-md text-on-surface mb-2"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 41,
+      "value": "Pythonic UI Syntax"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 40,
+      "child": 41
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 42,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 42,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant mb-8 flex-1"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 42,
+      "value": "Define interfaces with a clean, python-inspired syntax. Stop wrestling with HTML tags and React JSX, and start building with structural simplicity."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 40,
+      "child": 42
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 43,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 43,
+      "key": "class",
+      "value": "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 43,
+      "value": "Learn More"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 43,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 40,
+      "child": 43
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 44,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 44,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 44,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 29,
+      "child": 44
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 45,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 45,
+      "key": "class",
+      "value": "h-48 relative overflow-hidden bg-surface-container-high"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 45,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 44,
+      "child": 45
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 46,
+      "tag": "ShaderLayer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 46,
+      "key": "data-hero-background",
+      "value": "matrix-rain"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 45,
+      "child": 46
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 47,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 47,
+      "key": "class",
+      "value": "p-8 flex-1 flex flex-col"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 47,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 44,
+      "child": 47
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 48,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 48,
+      "key": "class",
+      "value": "font-headline-md text-on-surface mb-2"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 48,
+      "value": "WebGL \u0026 Wasm Integrated"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 47,
+      "child": 48
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 49,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 49,
+      "key": "class",
+      "value": "font-body-md text-on-surface-variant mb-8 flex-1"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 49,
+      "value": "Fully integrated with WebAssembly to bring desktop-grade performance to the browser, with built-in WebGL shaders and native GPU acceleration."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 47,
+      "child": 49
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 50,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 50,
+      "key": "class",
+      "value": "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 50,
+      "value": "Learn More"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 50,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 47,
+      "child": 50
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 51,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 51,
+      "key": "class",
+      "value": "py-24 bg-surface-container-lowest/10 backdrop-blur-sm"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 51,
+      "key": "data-scroll-reveal",
+      "value": "true"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 51,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 51
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 52,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 52,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 52,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 51,
+      "child": 52
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 53,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 53,
+      "key": "class",
+      "value": "text-center mb-16"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 53,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 52,
+      "child": 53
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 54,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 54,
+      "key": "class",
+      "value": "font-label-caps text-secondary tracking-widest block mb-4"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 54,
+      "value": "RAW BENCHMARKS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 53,
+      "child": 54
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 55,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 55,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 55,
+      "value": "Performance Lab"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 53,
+      "child": 55
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 56,
+      "tag": "Grid"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 56,
+      "key": "cols",
+      "value": "2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 56,
+      "key": "style",
+      "value": "gap: 48px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 52,
+      "child": 56
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 57,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 57,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-error/30 p-10 relative"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 57,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 56,
+      "child": 57
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 58,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 58,
+      "key": "class",
+      "value": "absolute top-4 right-6 font-label-mono text-error text-xs"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 58,
+      "value": "STATUS: BOTTLENECKED"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 57,
+      "child": 58
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 59,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 59,
+      "key": "class",
+      "value": "font-headline-md text-error mb-8"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 59,
+      "value": "Legacy DOM"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 57,
+      "child": 59
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 60,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 60,
+      "key": "class",
+      "value": "space-y-8"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 60,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 57,
+      "child": 60
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 61,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 61,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 16px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 60,
+      "child": 61
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 62,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 62,
+      "key": "class",
+      "value": "font-display-lg text-[80px] text-error leading-none"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 62,
+      "value": "14"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 61,
+      "child": 62
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 63,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 63,
+      "key": "class",
+      "value": "font-label-mono text-on-surface-variant pb-2"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 63,
+      "value": "FPS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 61,
+      "child": 63
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 64,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 64,
+      "key": "class",
+      "value": "h-2 w-full bg-error/10 rounded-full"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 64,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 60,
+      "child": 64
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 65,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 65,
+      "key": "class",
+      "value": "h-full bg-error w-[15%]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 65,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 64,
+      "child": 65
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 66,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 66,
+      "key": "class",
+      "value": "text-on-surface-variant text-sm font-body-md"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 66,
+      "value": "Reflow/Repaint overhead stalling main thread during complex animation cycles."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 60,
+      "child": 66
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 67,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 67,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-primary/30 p-10 relative"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 67,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 56,
+      "child": 67
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 68,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 68,
+      "key": "class",
+      "value": "absolute top-4 right-6"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 68,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 8px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 67,
+      "child": 68
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 69,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 69,
+      "key": "class",
+      "value": "w-2 h-2 rounded-full bg-primary animate-ping"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 69,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 68,
+      "child": 69
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 70,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 70,
+      "key": "class",
+      "value": "font-label-mono text-primary text-xs"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 70,
+      "value": "STABLE"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 68,
+      "child": 70
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 71,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 71,
+      "key": "class",
+      "value": "font-headline-md text-primary mb-8"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 71,
+      "value": "TinPyUI Wasm"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 67,
+      "child": 71
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 72,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 72,
+      "key": "class",
+      "value": "space-y-8"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 72,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 67,
+      "child": 72
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 73,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 73,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 16px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 72,
+      "child": 73
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 74,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 74,
+      "key": "class",
+      "value": "font-display-lg text-[80px] text-primary leading-none"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 74,
+      "value": "120"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 73,
+      "child": 74
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 75,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 75,
+      "key": "class",
+      "value": "font-label-mono text-on-surface-variant pb-2"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 75,
+      "value": "FPS"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 73,
+      "child": 75
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 76,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 76,
+      "key": "class",
+      "value": "h-2 w-full bg-primary/10 rounded-full"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 76,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 72,
+      "child": 76
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 77,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 77,
+      "key": "class",
+      "value": "h-full bg-primary w-full shadow-[0_0_15px_rgba(207,188,255,0.5)]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 77,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 76,
+      "child": 77
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 78,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 78,
+      "key": "class",
+      "value": "text-on-surface-variant text-sm font-body-md"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 78,
+      "value": "Direct GPU pipeline via WebAssembly. Zero DOM interaction, 100% efficient vector pushing."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 72,
+      "child": 78
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 79,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 79,
+      "key": "class",
+      "value": "py-24 bg-transparent"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 79,
+      "key": "data-scroll-reveal",
+      "value": "true"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 79,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 79
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 80,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 80,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop text-center mb-16"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 80,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 79,
+      "child": 80
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 81,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 81,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 81,
+      "value": "The Component Lab"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 80,
+      "child": 81
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 82,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 82,
+      "key": "class",
+      "value": "text-on-surface-variant mt-4 font-body-lg"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 82,
+      "value": "Interactive primitives pulsing with reactive neural signals."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 80,
+      "child": 82
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 83,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 83,
+      "key": "class",
+      "value": "flex-wrap"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 83,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 48px; justify-content: center;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 79,
+      "child": 83
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 84,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 84,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 84,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 83,
+      "child": 84
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 85,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 85,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 85,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 84,
+      "child": 85
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 86,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 86,
+      "key": "class",
+      "value": "px-6 py-3 border-2 border-primary text-primary font-bold rounded-full animate-pulse"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 86,
+      "value": "Button()"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 86,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 85,
+      "child": 86
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 87,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 87,
+      "key": "class",
+      "value": "font-label-mono text-primary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 87,
+      "value": "Interactive State"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 84,
+      "child": 87
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 88,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 88,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 88,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 83,
+      "child": 88
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 89,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 89,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 89,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 88,
+      "child": 89
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 90,
+      "tag": "h1"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 90,
+      "key": "class",
+      "value": "font-display-lg-mobile tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-[#cfbcff] to-[#c9a74d] animate-pulse"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 90,
+      "value": "TEXT"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 90,
+      "key": "style",
+      "value": "background: linear-gradient(45deg, #00f2fe, #9b51e0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 89,
+      "child": 90
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 91,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 91,
+      "key": "class",
+      "value": "font-label-mono text-secondary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 91,
+      "value": "GradientText()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 88,
+      "child": 91
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 92,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 92,
+      "key": "class",
+      "value": "group flex flex-col items-center gap-4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 92,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 83,
+      "child": 92
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 93,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 93,
+      "key": "class",
+      "value": "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden group"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 93,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 92,
+      "child": 93
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 94,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 94,
+      "key": "class",
+      "value": "w-24 h-24 border-2 border-dashed border-tertiary/50 rounded-full animate-spin flex items-center justify-center group-hover:border-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 94,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 93,
+      "child": 94
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 95,
+      "tag": "Icon"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 95,
+      "key": "class",
+      "value": "text-tertiary text-4xl"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 95,
+      "key": "name",
+      "value": "settings_input_component"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 94,
+      "child": 95
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 96,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 96,
+      "key": "class",
+      "value": "font-label-mono text-tertiary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 96,
+      "value": "Loader()"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 92,
+      "child": 96
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 97,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 97,
+      "key": "class",
+      "value": "py-24 bg-transparent"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 97,
+      "key": "data-scroll-reveal",
+      "value": "true"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 97,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 97
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 98,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 98,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 98,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 97,
+      "child": 98
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 99,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 99,
+      "key": "class",
+      "value": "mb-12"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 99,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 98,
+      "child": 99
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 100,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 100,
+      "key": "class",
+      "value": "font-label-caps text-primary tracking-widest block mb-4"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 100,
+      "value": "BLUEPRINT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 99,
+      "child": 100
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 101,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 101,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 101,
+      "value": "The Engine Blueprint"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 99,
+      "child": 101
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 102,
+      "tag": "Grid"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 102,
+      "key": "class",
+      "value": "gap-px bg-outline-variant/30 rounded-xl overflow-hidden shadow-2xl border border-outline-variant/50"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 102,
+      "key": "cols",
+      "value": "2"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 98,
+      "child": 102
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 103,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 103,
+      "key": "class",
+      "value": "bg-[#0d1117] p-8 font-label-mono text-sm leading-relaxed overflow-x-auto min-h-[500px] text-[#c9d1d9]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 103,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 102,
+      "child": 103
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 104,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 104,
+      "key": "class",
+      "value": "mb-6"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 104,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; gap: 8px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 103,
+      "child": 104
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 105,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 105,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 6px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 104,
+      "child": 105
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 106,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 106,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#ff5f56]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 106,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 105,
+      "child": 106
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 107,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 107,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#ffbd2e]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 107,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 105,
+      "child": 107
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 108,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 108,
+      "key": "class",
+      "value": "w-3 h-3 rounded-full bg-[#27c93f]"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 108,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 105,
+      "child": 108
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 109,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 109,
+      "key": "class",
+      "value": "text-on-surface-variant ml-4 text-xs"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 109,
+      "value": "dashboard.tin"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 104,
+      "child": 109
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 110,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 110,
+      "key": "class",
+      "value": "whitespace-pre"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 110,
+      "value": "component Dashboard():\n    Container(align='center', justify='center', width='full', padding=30):\n        GradientText(text='Active Metrics', animation='neon-pulse')\n        Card(title='Real-time FPS', value=120, glow=True):\n            \n            Button(text='Interact', color='neon-cyan')\n\n# .tin rendered execution on WebAssembly\nmount(Dashboard)"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 103,
+      "child": 110
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 111,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 111,
+      "key": "class",
+      "value": "relative bg-background/30 backdrop-blur-md flex items-center justify-center overflow-hidden"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 111,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 102,
+      "child": 111
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 112,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 112,
+      "key": "class",
+      "value": "relative z-10 bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(207,188,255,0.3)] shadow-[0_0_15px_rgba(207,188,255,0.2)] p-10 text-center"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 112,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 111,
+      "child": 112
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 113,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 113,
+      "key": "class",
+      "value": "font-display-lg-mobile text-primary tracking-widest mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 113,
+      "value": "NEON ACTIVE"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 112,
+      "child": 113
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 114,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 114,
+      "key": "class",
+      "value": "flex flex-col gap-4"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 114,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 112,
+      "child": 114
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 115,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 115,
+      "key": "class",
+      "value": "h-1 w-full bg-primary-container rounded-full overflow-hidden"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 115,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 114,
+      "child": 115
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 116,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 116,
+      "key": "class",
+      "value": "h-full bg-primary w-2/3 shadow-[0_0_10px_rgba(207,188,255,1)] animate-pulse"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 116,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 115,
+      "child": 116
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 117,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 117,
+      "key": "class",
+      "value": "font-label-mono text-xs text-on-surface-variant w-full"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 117,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; justify-content: space-between;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 114,
+      "child": 117
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 118,
+      "tag": "p"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 118,
+      "value": "THROUGHPUT"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 117,
+      "child": 118
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 119,
+      "tag": "p"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 119,
+      "value": "8.4 GB/S"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 117,
+      "child": 119
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 120,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 120,
+      "key": "class",
+      "value": "mt-8 px-6 py-2 border border-primary/50 text-primary font-bold hover:bg-primary hover:text-on-primary transition-all"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 120,
+      "value": "INTERACT"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 120,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 112,
+      "child": 120
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 121,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 121,
+      "key": "class",
+      "value": "py-32 relative"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 121,
+      "key": "data-scroll-reveal",
+      "value": "true"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 121,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 121
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 122,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 122,
+      "key": "class",
+      "value": "max-w-4xl mx-auto px-margin-mobile text-center"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 122,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 121,
+      "child": 122
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 123,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 123,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-primary/20 p-16 relative overflow-hidden"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 123,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 122,
+      "child": 123
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 124,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 124,
+      "key": "class",
+      "value": "font-display-lg text-display-lg-mobile text-on-surface mb-8 relative z-10"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 124,
+      "value": "Ready to push the boundary?"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 123,
+      "child": 124
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 125,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 125,
+      "key": "class",
+      "value": "text-on-surface-variant mb-12 font-body-lg max-w-xl mx-auto relative z-10"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 125,
+      "value": "Join a community of developers rebuilding the web with pure Pythonic syntax and native performance."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 123,
+      "child": 125
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 126,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 126,
+      "key": "class",
+      "value": "relative z-10 flex-col sm:flex-row"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 126,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 24px; justify-content: center;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 123,
+      "child": 126
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 127,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 127,
+      "key": "class",
+      "value": "bg-primary text-on-primary px-12 py-5 font-bold rounded-lg hover:scale-105 transition-transform text-lg shadow-[0_0_30px_rgba(207,188,255,0.3)]"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 127,
+      "value": "Join the Beta"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 127,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 126,
+      "child": 127
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 128,
+      "tag": "button"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 128,
+      "key": "class",
+      "value": "bg-[rgba(20,18,24,0.2)] text-on-surface border border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 128,
+      "value": "Submit Your Experiment"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 128,
+      "key": "style",
+      "value": "cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; border: none; transition: all 0.2s ease;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 126,
+      "child": 128
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 129,
+      "tag": "Footer"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 129,
+      "key": "class",
+      "value": "bg-surface-container-lowest/30 backdrop-blur-md py-12 border-t-2 border-tertiary w-full"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 1,
+      "child": 129
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 130,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 130,
+      "key": "class",
+      "value": "max-w-max-width mx-auto px-margin-desktop flex-col md:flex-row gap-8 w-full"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 130,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; align-items: center; justify-content: space-between;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 129,
+      "child": 130
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 131,
+      "tag": "h2"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 131,
+      "key": "class",
+      "value": "font-headline-md text-primary"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 131,
+      "value": "TinPyUI"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 130,
+      "child": 131
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 132,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 132,
+      "key": "class",
+      "value": "font-label-mono text-label-mono flex-wrap justify-center"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 132,
+      "key": "style",
+      "value": "display: flex; flex-direction: row; box-sizing: border-box; gap: 24px;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 130,
+      "child": 132
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 133,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 133,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 133,
+      "key": "href",
+      "value": "https://www.npmjs.com/package/tinpyui?activeTab=versions"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 133,
+      "value": "NPM"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 132,
+      "child": 133
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 134,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 134,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 134,
+      "key": "href",
+      "value": "https://pypi.org/project/tinpyui-ff/"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 134,
+      "value": "PyPI"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 132,
+      "child": 134
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 135,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 135,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 135,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 135,
+      "value": "GitHub"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 132,
+      "child": 135
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 136,
+      "tag": "Link"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 136,
+      "key": "class",
+      "value": "text-outline hover:text-tertiary transition-colors"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 136,
+      "key": "href",
+      "value": "https://github.com/barathanandh-coder/TinUi/discussions"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 136,
+      "value": "Discussions"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 132,
+      "child": 136
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 137,
+      "tag": "div"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 137,
+      "key": "class",
+      "value": "font-label-mono text-label-mono text-outline text-right"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 137,
+      "key": "style",
+      "value": "display: flex; flex-direction: column; box-sizing: border-box;"
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 130,
+      "child": 137
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 138,
+      "tag": "p"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 138,
+      "value": "© 2026 TinPyUI Framework."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 137,
+      "child": 138
+    },
+    {
+      "op": "CREATE_NODE",
+      "id": 139,
+      "tag": "p"
+    },
+    {
+      "op": "SET_ATTRIBUTE",
+      "id": 139,
+      "key": "class",
+      "value": "text-[10px] opacity-50"
+    },
+    {
+      "op": "SET_TEXT",
+      "id": 139,
+      "value": "Showcase Portal v1.0. Zero-DOM Edition."
+    },
+    {
+      "op": "APPEND_CHILD",
+      "parent": 137,
+      "child": 139
+    }
+  ]
+}

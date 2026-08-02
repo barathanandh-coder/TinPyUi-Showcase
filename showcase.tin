@@ -1,0 +1,177 @@
+component Main():
+    AnimatedBackground(effect = "black-hole", primaryColor = "neon-cyan", secondaryColor = "neon-purple", speed = "1"):
+        
+        # Navigation
+        Navbar(class_ = "w-full fixed top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant flex"):
+            Row(justify = "space-between", align = "center", width = "full", class_ = "max-w-max-width mx-auto px-margin-desktop py-4 flex-1"):
+                Link(href = "#", class_ = "font-display-lg-mobile text-display-lg-mobile font-bold text-primary tracking-tighter flex items-center gap-2"):
+                    Text(text = "TinPyUI")
+                    Text(text = "Showcase", class_ = "text-on-surface-variant font-normal")
+                Row(gap = 32, class_ = "hidden md:flex items-center"):
+                    Button(text = "Showcase", onClick = "window.location.href='#'", class_ = "font-body-md text-primary border-b-2 border-primary pb-1 bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors")
+                    Button(text = "Features", onClick = "window.location.href='#features'", class_ = "font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors")
+                    Button(text = "Docs", onClick = "window.open('https://github.com/barathanandh-coder/TinUi', '_blank')", class_ = "font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors")
+                    Button(text = "Community", onClick = "window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')", class_ = "font-body-md text-on-surface-variant hover:text-on-surface bg-transparent hover:bg-white/5 px-3 py-1 rounded transition-colors")
+                Row(gap = 16, align = "center"):
+                    Icon(name = "terminal", class_ = "text-primary cursor-pointer hover:scale-110 transition-transform")
+
+        # Hero
+        Section(class_ = "relative min-h-[90vh] flex items-center overflow-hidden bg-transparent"):
+            Grid(cols = "2", gap = 48, class_ = "container mx-auto px-margin-desktop items-center relative z-10"):
+                Container(class_ = "space-y-8"):
+                    Heading(text = "The Tin 
+Showcase.", size = "hero", class_ = "font-display-lg text-display-lg text-on-surface leading-[1.05] tracking-tight whitespace-pre-line")
+                    Text(text = "Experience the limit of the Zero-DOM engine.", class_ = "font-label-mono text-headline-md text-secondary")
+                    Text(text = "Dive into the vanguard of web graphics. These experiments are rendered directly to WebGL via our specialized WebAssembly kernel, achieving performance previously impossible in a browser.", class_ = "font-body-lg text-on-surface-variant max-w-lg")
+                    Row(gap = 16):
+                        Link(text = "Explore Features", href = "#features", onClick = "window.location.href='#features'", class_ = "bg-tertiary text-on-tertiary-fixed px-8 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(231,195,101,0.4)] hover:scale-105 transition-all inline-block cursor-pointer")
+                        Link(text = "Get Started", href = "https://www.npmjs.com/package/tinpyui?activeTab=versions", class_ = "border border-primary text-primary px-8 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all inline-block cursor-pointer")
+                Container():
+                    # Empty Right Column
+
+        # Live Features Gallery
+        Section(id = "features", scrollReveal = "true", class_ = "py-24 relative px-margin-desktop max-w-max-width mx-auto bg-transparent"):
+            Container(class_ = "mb-16"):
+                Text(text = "FRAMEWORK CORE", class_ = "font-label-caps text-primary tracking-widest block mb-4")
+                Heading(text = "TinPyUI Features", class_ = "font-display-lg text-display-lg-mobile text-on-surface")
+            
+            Grid(cols = "3", gap = 32):
+                # Feature 1
+                Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"):
+                    Container(class_ = "h-48 relative overflow-hidden bg-surface-container-high"):
+                        ShaderLayer(effect = "cyber-grid")
+                    Container(class_ = "p-8 flex-1 flex flex-col"):
+                        Heading(text = "Zero-DOM Architecture", class_ = "font-headline-md text-on-surface mb-2")
+                        Text(text = "Bypasses the traditional Document Object Model bottleneck. User interfaces are compiled to raw instructions and painted natively at hardware speeds.", class_ = "font-body-md text-on-surface-variant mb-8 flex-1")
+                        Button(text = "Learn More", onClick = "window.open('https://github.com/barathanandh-coder/TinUi/blob/main/README.md', '_blank')", class_ = "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors")
+
+                # Feature 2
+                Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"):
+                    Container(class_ = "h-48 relative overflow-hidden bg-surface-container-high"):
+                        ShaderLayer(effect = "fluid-sim")
+                    Container(class_ = "p-8 flex-1 flex flex-col"):
+                        Heading(text = "Pythonic UI Syntax", class_ = "font-headline-md text-on-surface mb-2")
+                        Text(text = "Define interfaces with a clean, python-inspired syntax. Stop wrestling with HTML tags and React JSX, and start building with structural simplicity.", class_ = "font-body-md text-on-surface-variant mb-8 flex-1")
+                        Button(text = "Learn More", onClick = "window.open('https://github.com/barathanandh-coder/TinUi/blob/main/README.md', '_blank')", class_ = "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors")
+
+                # Feature 3
+                Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] shadow-[0_0_15px_rgba(207,188,255,0.05)] border border-[rgba(255,255,255,0.05)] p-0 group hover:-translate-y-2 transition-transform duration-500 cursor-pointer overflow-hidden flex flex-col min-h-[400px]"):
+                    Container(class_ = "h-48 relative overflow-hidden bg-surface-container-high"):
+                        ShaderLayer(effect = "matrix-rain")
+                    Container(class_ = "p-8 flex-1 flex flex-col"):
+                        Heading(text = "WebGL & Wasm Integrated", class_ = "font-headline-md text-on-surface mb-2")
+                        Text(text = "Fully integrated with WebAssembly to bring desktop-grade performance to the browser, with built-in WebGL shaders and native GPU acceleration.", class_ = "font-body-md text-on-surface-variant mb-8 flex-1")
+                        Button(text = "Learn More", onClick = "window.open('https://github.com/barathanandh-coder/TinUi/blob/main/README.md', '_blank')", class_ = "w-full py-3 bg-surface-container-highest text-primary font-bold rounded group-hover:bg-primary group-hover:text-on-primary transition-colors")
+
+        # Performance Lab
+        Section(scrollReveal = "true", class_ = "py-24 bg-surface-container-lowest/10 backdrop-blur-sm"):
+            Container(class_ = "max-w-max-width mx-auto px-margin-desktop"):
+                Container(class_ = "text-center mb-16"):
+                    Text(text = "RAW BENCHMARKS", class_ = "font-label-caps text-secondary tracking-widest block mb-4")
+                    Heading(text = "Performance Lab", class_ = "font-display-lg text-display-lg-mobile text-on-surface")
+                
+                Grid(cols = "2", gap = 48):
+                    Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-error/30 p-10 relative"):
+                        Text(text = "STATUS: BOTTLENECKED", class_ = "absolute top-4 right-6 font-label-mono text-error text-xs")
+                        Heading(text = "Legacy DOM", class_ = "font-headline-md text-error mb-8")
+                        Container(class_ = "space-y-8"):
+                            Row(align = "end", gap = 16):
+                                Text(text = "14", class_ = "font-display-lg text-[80px] text-error leading-none")
+                                Text(text = "FPS", class_ = "font-label-mono text-on-surface-variant pb-2")
+                            Container(class_ = "h-2 w-full bg-error/10 rounded-full"):
+                                Container(class_ = "h-full bg-error w-[15%]")
+                            Text(text = "Reflow/Repaint overhead stalling main thread during complex animation cycles.", class_ = "text-on-surface-variant text-sm font-body-md")
+
+                    Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-primary/30 p-10 relative"):
+                        Row(align = "center", gap = 8, class_ = "absolute top-4 right-6"):
+                            Container(class_ = "w-2 h-2 rounded-full bg-primary animate-ping")
+                            Text(text = "STABLE", class_ = "font-label-mono text-primary text-xs")
+                        Heading(text = "TinPyUI Wasm", class_ = "font-headline-md text-primary mb-8")
+                        Container(class_ = "space-y-8"):
+                            Row(align = "end", gap = 16):
+                                Text(text = "120", class_ = "font-display-lg text-[80px] text-primary leading-none")
+                                Text(text = "FPS", class_ = "font-label-mono text-on-surface-variant pb-2")
+                            Container(class_ = "h-2 w-full bg-primary/10 rounded-full"):
+                                Container(class_ = "h-full bg-primary w-full shadow-[0_0_15px_rgba(207,188,255,0.5)]")
+                            Text(text = "Direct GPU pipeline via WebAssembly. Zero DOM interaction, 100% efficient vector pushing.", class_ = "text-on-surface-variant text-sm font-body-md")
+
+        # The Component Lab
+        Section(scrollReveal = "true", class_ = "py-24 bg-transparent"):
+            Container(class_ = "max-w-max-width mx-auto px-margin-desktop text-center mb-16"):
+                Heading(text = "The Component Lab", class_ = "font-display-lg text-display-lg-mobile text-on-surface")
+                Text(text = "Interactive primitives pulsing with reactive neural signals.", class_ = "text-on-surface-variant mt-4 font-body-lg")
+            
+            Row(justify = "center", align = "center", gap = 48, class_ = "flex-wrap"):
+                Container(class_ = "group flex flex-col items-center gap-4"):
+                    Card(class_ = "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden"):
+                        Button(text = "Button()", class_ = "px-6 py-3 border-2 border-primary text-primary font-bold rounded-full animate-pulse")
+                    Text(text = "Interactive State", class_ = "font-label-mono text-primary")
+                
+                Container(class_ = "group flex flex-col items-center gap-4"):
+                    Card(class_ = "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden"):
+                        GradientText(text = "TEXT", class_ = "font-display-lg-mobile tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-[#cfbcff] to-[#c9a74d] animate-pulse")
+                    Text(text = "GradientText()", class_ = "font-label-mono text-secondary")
+
+                Container(class_ = "group flex flex-col items-center gap-4"):
+                    Card(class_ = "w-40 h-40 rounded-xl bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(255,255,255,0.05)] flex items-center justify-center hover:scale-110 transition-all cursor-pointer relative overflow-hidden group"):
+                        Container(class_ = "w-24 h-24 border-2 border-dashed border-tertiary/50 rounded-full animate-spin flex items-center justify-center group-hover:border-tertiary transition-colors"):
+                            Icon(name = "settings_input_component", class_ = "text-tertiary text-4xl")
+                    Text(text = "Loader()", class_ = "font-label-mono text-tertiary")
+
+        # Engine Blueprint Section
+        Section(scrollReveal = "true", class_ = "py-24 bg-transparent"):
+            Container(class_ = "max-w-max-width mx-auto px-margin-desktop"):
+                Container(class_ = "mb-12"):
+                    Text(text = "BLUEPRINT", class_ = "font-label-caps text-primary tracking-widest block mb-4")
+                    Heading(text = "The Engine Blueprint", class_ = "font-display-lg text-display-lg-mobile text-on-surface")
+                
+                Grid(cols = "2", class_ = "gap-px bg-outline-variant/30 rounded-xl overflow-hidden shadow-2xl border border-outline-variant/50"):
+                    Container(class_ = "bg-[#0d1117] p-8 font-label-mono text-sm leading-relaxed overflow-x-auto min-h-[500px] text-[#c9d1d9]"):
+                        Row(gap = 8, align = "center", class_ = "mb-6"):
+                            Row(gap = 6):
+                                Container(class_ = "w-3 h-3 rounded-full bg-[#ff5f56]")
+                                Container(class_ = "w-3 h-3 rounded-full bg-[#ffbd2e]")
+                                Container(class_ = "w-3 h-3 rounded-full bg-[#27c93f]")
+                            Text(text = "dashboard.tin", class_ = "text-on-surface-variant ml-4 text-xs")
+                        Text(text = "component Dashboard():
+    Container(align='center', justify='center', width='full', padding=30):
+        GradientText(text='Active Metrics', animation='neon-pulse')
+        Card(title='Real-time FPS', value=120, glow=True):
+            
+            Button(text='Interact', color='neon-cyan')
+
+# .tin rendered execution on WebAssembly
+mount(Dashboard)", class_ = "whitespace-pre")
+
+                    Container(class_ = "relative bg-background/30 backdrop-blur-md flex items-center justify-center overflow-hidden"):
+                        Card(class_ = "relative z-10 bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-[rgba(207,188,255,0.3)] shadow-[0_0_15px_rgba(207,188,255,0.2)] p-10 text-center"):
+                            Text(text = "NEON ACTIVE", class_ = "font-display-lg-mobile text-primary tracking-widest mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary")
+                            Container(class_ = "flex flex-col gap-4"):
+                                Container(class_ = "h-1 w-full bg-primary-container rounded-full overflow-hidden"):
+                                    Container(class_ = "h-full bg-primary w-2/3 shadow-[0_0_10px_rgba(207,188,255,1)] animate-pulse")
+                                Row(justify = "space-between", class_ = "font-label-mono text-xs text-on-surface-variant w-full"):
+                                    Text(text = "THROUGHPUT")
+                                    Text(text = "8.4 GB/S")
+                            Button(text = "INTERACT", class_ = "mt-8 px-6 py-2 border border-primary/50 text-primary font-bold hover:bg-primary hover:text-on-primary transition-all")
+
+        # CTA
+        Section(scrollReveal = "true", class_ = "py-32 relative"):
+            Container(class_ = "max-w-4xl mx-auto px-margin-mobile text-center"):
+                Card(class_ = "bg-[rgba(20,18,24,0.2)] backdrop-blur-[16px] border border-primary/20 p-16 relative overflow-hidden"):
+                    Heading(text = "Ready to push the boundary?", class_ = "font-display-lg text-display-lg-mobile text-on-surface mb-8 relative z-10")
+                    Text(text = "Join a community of developers rebuilding the web with pure Pythonic syntax and native performance.", class_ = "text-on-surface-variant mb-12 font-body-lg max-w-xl mx-auto relative z-10")
+                    Row(justify = "center", gap = 24, class_ = "relative z-10 flex-col sm:flex-row"):
+                        Button(text = "Submit Your Experiment", onClick = "window.open('https://github.com/barathanandh-coder/TinUi/discussions', '_blank')", class_ = "bg-[rgba(20,18,24,0.2)] text-on-surface border border-outline-variant px-12 py-5 font-bold rounded-lg hover:bg-white/5 transition-all text-lg")
+
+        # Footer
+        Footer(class_ = "bg-surface-container-lowest/30 backdrop-blur-md py-12 border-t-2 border-tertiary w-full"):
+            Row(justify = "space-between", align = "center", class_ = "max-w-max-width mx-auto px-margin-desktop flex-col md:flex-row gap-8 w-full"):
+                Heading(text = "TinPyUI", class_ = "font-headline-md text-primary")
+                Row(gap = 24, class_ = "font-label-mono text-label-mono flex-wrap justify-center"):
+                    Link(text = "NPM", href = "https://www.npmjs.com/package/tinpyui?activeTab=versions", class_ = "text-outline hover:text-tertiary transition-colors")
+                    Link(text = "PyPI", href = "https://pypi.org/project/tinpyui-ff/", class_ = "text-outline hover:text-tertiary transition-colors")
+                    Link(text = "GitHub", href = "https://github.com/barathanandh-coder/TinUi", class_ = "text-outline hover:text-tertiary transition-colors")
+                    Link(text = "Discussions", href = "https://github.com/barathanandh-coder/TinUi/discussions", class_ = "text-outline hover:text-tertiary transition-colors")
+                Container(class_ = "font-label-mono text-label-mono text-outline text-right"):
+                    Text(text = "© 2026 TinPyUI Framework.")
+                    Text(text = "Showcase Portal v1.0. Zero-DOM Edition.", class_ = "text-[10px] opacity-50")
